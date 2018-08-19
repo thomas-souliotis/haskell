@@ -1,0 +1,110 @@
+name:                w4
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/w4#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Thomas Souliotis
+maintainer:          thomas7777@hotmail.gr
+copyright:           2017 Thomas Souliotis
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md,
+                     benchmark.html
+
+library
+  hs-source-dirs: src
+  exposed-modules:
+    Task2,
+    Task4,
+    Lib
+  build-depends:
+    base >= 4.3 && < 5,
+    cryptonite,
+    bytestring,
+    containers,
+    QuickCheck,
+    directory,
+    text,
+    parsec,
+    base58-bytestring >=0.1.0,
+    base16-bytestring >=0.1.1.6,
+    criterion,
+    deepseq >=1.4.2.0
+  ghc-options:         -Wall
+  default-language: Haskell2010
+
+benchmark bench
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      benchmark
+  main-is:             Task3.hs
+  build-depends:
+    w4,
+    base >= 4.7 && < 5,
+    containers,
+    criterion,
+    deepseq
+  ghc-options:         -Wall
+  default-language:    Haskell2010
+
+executable validator
+  hs-source-dirs:      app
+  main-is:             Val.hs
+  ghc-options:         -Wall
+  default-language:    Haskell2010
+  build-depends:
+    w4,
+    base >= 4.3 && < 5,
+    cryptonite,
+    bytestring,
+    containers,
+    QuickCheck,
+    directory,
+    text,
+    parsec,
+    base58-bytestring >=0.1.0,
+    base16-bytestring >=0.1.1.6,
+    criterion,
+    deepseq >=1.4.2.0
+
+executable walletEnc
+  hs-source-dirs:      app
+  main-is:             Wenc.hs
+  ghc-options:         -Wall
+  default-language:    Haskell2010
+  build-depends:
+    w4,
+    base >= 4.3 && < 5,
+    cryptonite,
+    bytestring,
+    containers,
+    QuickCheck,
+    directory,
+    text,
+    parsec,
+    base58-bytestring >=0.1.0,
+    base16-bytestring >=0.1.1.6,
+    criterion,
+    deepseq >=1.4.2.0
+
+executable walletDec
+  hs-source-dirs:      app
+  main-is:             Wdec.hs
+  ghc-options:         -Wall
+  default-language:    Haskell2010
+  build-depends:
+    w4,
+    base >= 4.3 && < 5,
+    cryptonite,
+    bytestring,
+    containers,
+    QuickCheck,
+    directory,
+    text,
+    parsec,
+    base58-bytestring >=0.1.0,
+    base16-bytestring >=0.1.1.6,
+    criterion,
+    deepseq >=1.4.2.0

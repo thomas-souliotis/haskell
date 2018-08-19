@@ -1,0 +1,132 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-11 23:38:50.930964 UTC
+
+interface w6-0.1.0.0-W9Ugrx6kTHIl3x6l8azM:Task2 8002
+  interface hash: 414fda2e71bb2b20cabed515b941c3dd
+  ABI hash: c31efa60abb3bc2349226966b6da4537
+  export-list hash: 608e7face2fc4d0161b881efbf1c49b3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 11b94d793681c29345de1ecbe8ba52a7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task2.build
+  Task2.filter
+  Task2.fromTo
+  Task2.functionSeq
+  Task2.functionSeq'
+  Task2.helpSeq
+  Task2.replicate
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+2517fc202a4c06cd2aa1b4a2fd09b74d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task2.$trModule2 Task2.$trModule1) -}
+6b0ebc6fdc7aa7224655fefb35cb1deb
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task2"#) -}
+ba17dc59223dbf7014704a1599430f3d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w6-0.1.0.0-W9Ugrx6kTHIl3x6l8azM"#) -}
+fdfd2b5d1d52e3bd7f002c35d2222bd7
+  $wfromTo :: GHC.Prim.Int# -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww ww1) of wild {
+                   GHC.Types.False -> Task2.$wgo ww ww1
+                   GHC.Types.True -> GHC.Types.[] @ GHC.Types.Int }) -}
+12dc6b4e96515520bfda50651548659f
+  $wgo :: GHC.Prim.Int# -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0] -}
+0d74c0ca2a76bdacfa24fed6ef7b286b
+  $wreplicate :: GHC.Prim.Int# -> a -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>, Inline: [0],
+     Unfolding: (\ @ a (ww :: GHC.Prim.Int#) (w :: a) ->
+                 letrec {
+                   $wgo1 :: GHC.Prim.Int# -> [a]
+                     {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                   = \ (ww1 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# ww1 0#) of wild {
+                       GHC.Types.False -> GHC.Types.: @ a w ($wgo1 (GHC.Prim.-# ww1 1#))
+                       GHC.Types.True -> GHC.Types.[] @ a }
+                 } in
+                 $wgo1 ww) -}
+d523bce516bd87ed418735781dec73da
+  build :: (forall r. r -> (a -> r -> r) -> r) -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <C(C(S)),1*C1(C1(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (builder :: forall r. r -> (a -> r -> r) -> r) ->
+                 builder @ [a] (GHC.Types.[] @ a) (GHC.Types.: @ a)) -}
+e0e5a4d337cda1a4df6e448923d3f81c
+  filter :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ a (p :: a -> GHC.Types.Bool) (xs :: [a]) ->
+                 letrec {
+                   go :: [a] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ a
+                       : y ys
+                       -> case p y of wild1 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True -> GHC.Types.: @ a y (go ys) } }
+                 } in
+                 go xs) -}
+9e09cbcee97bd6b48e650320fe5647f5
+  fromTo :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 -> Task2.$wfromTo ww1 ww3 } }) -}
+f627a5585e84b68ee52010d97ee4ddb3
+  functionSeq :: GHC.Types.Int
+  {- Strictness: b -}
+f26f6396b340a138d5e43d28b0b6e37a
+  functionSeq' :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+50935ed3e43c84a359f951f9352bc895
+  helpSeq :: b -> a -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b @ a (x :: b) (y :: a) -> case y of tpl { DEFAULT -> x }) -}
+d4b3a8a1a1ef7951d42f14e6bbdf454a
+  replicate :: GHC.Types.Int -> a -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Types.Int) (w1 :: a) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Task2.$wreplicate @ a ww1 w1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

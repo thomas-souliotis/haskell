@@ -1,0 +1,500 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-18 22:15:42.263879 UTC
+
+interface w7-0.1.0.0-bXxXCuABYP3q6A8oPpwOS:Task3 8002
+  interface hash: 7a698fedbdb9e8860fe40ea41c7f1996
+  ABI hash: de9b3fa150e151e2c9154dee7cca6cfb
+  export-list hash: 1bf0b00cd58a103d19ceb0745509d45e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b2c8879a613db2b9f2ef553036d16e5b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task3._Check
+  Task3._Natural
+  Task3._TheOne
+  Task3.preview
+  Task3.prism
+  Task3.prism'
+  Task3.review
+  Task3.Checked{Task3.Checked unChecked}
+  Task3.Prism
+  Task3.Prism'
+module dependencies:
+package dependencies: StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q
+                      comonad-5.0.1@comonad-5.0.1-2dOTQljdUSmGwatNHkYwW3
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributive-0.5.2@distributive-0.5.2-KlkgfUmuqy3Z181VSjKfJ
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Tannen
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.Functor.Const 55e879b32dc0d2620c0cd11b1fc0d5b3
+import  -/  base-4.9.1.0:Data.Functor.Identity 6ee67943d44d50091e12d22df04741f0
+import  -/  base-4.9.1.0:Data.Monoid 51cc9cd8c130d49ba96b7c2c2406022b
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Natural 5e34c306b81bf883b398a16266b3eabd
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Numeric.Natural 69acfee9c2b1f7c97f1676c6f409180a
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx:Data.Profunctor 25dc90832538b0017b8303de2d4596fa
+import  -/  profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx:Data.Profunctor.Choice 78bfa2a6a8a07a629ece96b2a48be65e
+import  -/  profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx:Data.Profunctor.Unsafe 1d8031be6716106e9ae40563a5c4d511
+import  -/  tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged 7c7681ee58b1de4db0b930c3ab079d41
+8c66aa17a860a00be1c15e00036c99b2
+  $fShowChecked :: GHC.Show.Show a => GHC.Show.Show (Task3.Checked a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Task3.Checked a)
+                  (Task3.$fShowChecked_$cshowsPrec @ a $dShow)
+                  (Task3.$fShowChecked_$cshow @ a $dShow)
+                  (Task3.$fShowChecked_$cshowList @ a $dShow) -}
+848feaeffd85566e2f1682995c8e95bd
+  $fShowChecked1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+7a3e03551c6c729e2d4deedb6004670c
+  $fShowChecked2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+4ddb6a31295f44132acb18095805a71b
+  $fShowChecked3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "unChecked = "#) -}
+ff7f52c588ef6e8c1c044bb3fd0fba68
+  $fShowChecked4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Checked {"#) -}
+2ea95f733afaeb21b0bc7bdba5c50cc2
+  $fShowChecked5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Task3.$fShowChecked2
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8c66aa17a860a00be1c15e00036c99b2
+  $fShowChecked_$cshow ::
+    GHC.Show.Show a => Task3.Checked a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Task3.Checked a) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   Task3.$fShowChecked4
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Task3.$fShowChecked3
+                      (GHC.Show.showsPrec
+                         @ a
+                         $dShow
+                         Task3.$fShowChecked1
+                         x `cast` (Task3.N:Checked[0] <a>_R)
+                         Task3.$fShowChecked5))) -}
+8c66aa17a860a00be1c15e00036c99b2
+  $fShowChecked_$cshowList ::
+    GHC.Show.Show a => [Task3.Checked a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [Task3.Checked a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Task3.Checked a)
+                   (Task3.$fShowChecked_$cshowsPrec @ a $dShow Task3.$fShowChecked1)
+                   eta
+                   eta1) -}
+8c66aa17a860a00be1c15e00036c99b2
+  $fShowChecked_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> Task3.Checked a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><S(S),1*U(U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Task3.Checked a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Task3.$w$cshowsPrec @ a w ww1 w2 }) -}
+9e224c181b70224a0c5b9e3a174313b3
+  $tc'Checked :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14096689293894994679##
+                   4834785078003205452##
+                   Task3.$trModule
+                   Task3.$tc'Checked1) -}
+ca3e4c941f2abd1b789cc8f76fc74393
+  $tc'Checked1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Checked"#) -}
+b46e8c0329da78b649a2a6f6da058092
+  $tcChecked :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   800854121726401714##
+                   16104754081661299049##
+                   Task3.$trModule
+                   Task3.$tcChecked1) -}
+180e8fe071b22af84d96ab456104335f
+  $tcChecked1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Checked"#) -}
+14e6bcfa561e4981e1a076781cf419e1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task3.$trModule2 Task3.$trModule1) -}
+7537a34914db64f6afe09c74d7a914a9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task3"#) -}
+362ac4b7687c5bc133564601da5acf7b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w7-0.1.0.0-bXxXCuABYP3q6A8oPpwOS"#) -}
+8c66aa17a860a00be1c15e00036c99b2
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int# -> Task3.Checked a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(1*C1(C1(U)),A,A)><S,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: Task3.Checked a) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec
+                       @ a
+                       w
+                       Task3.$fShowChecked1
+                       w1 `cast` (Task3.N:Checked[0] <a>_R)
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Task3.$fShowChecked4
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          Task3.$fShowChecked3
+                          (f (GHC.Base.++ @ GHC.Types.Char Task3.$fShowChecked2 x)))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x)) }) -}
+8c66aa17a860a00be1c15e00036c99b2
+  newtype Checked a = Checked {unChecked :: a}
+85b00afa9b4eb97dc8eae31818a82621
+  type Prism s t a b =
+    forall (f :: * -> *) (p :: * -> * -> *).
+    (GHC.Base.Applicative f, Data.Profunctor.Choice.Choice p) =>
+    p a (f b) -> p s (f t)
+42b7add59754b41d36ceee49e67849f9
+  type Prism' s a = Task3.Prism s s a a
+588037c37c0f0ed3b07dd412bbd63f2e
+  _Check :: (a -> GHC.Types.Bool) -> Task3.Prism' a (Task3.Checked a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,C(U)><L,U(U(C(U),A),U,A,A,A)><S(S(C(C(C(S)))LLLL)LL),U(U(C(C1(C1(U))),A,A,A,A),A,C(U))><L,U>,
+     Unfolding: (\ @ a
+                   (dk :: a -> GHC.Types.Bool)
+                   @ (f :: * -> *)
+                   @ (p :: * -> * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   ($dChoice :: Data.Profunctor.Choice.Choice p)
+                   (eta :: p (Task3.Checked a) (f (Task3.Checked a))) ->
+                 Task3.prism
+                   @ a
+                   @ a
+                   @ (Task3.Checked a)
+                   @ (Task3.Checked a)
+                   (\ (s :: a) ->
+                    case dk s of wild {
+                      GHC.Types.False -> Data.Either.Left @ a @ (Task3.Checked a) s
+                      GHC.Types.True
+                      -> Data.Either.Right
+                           @ a
+                           @ (Task3.Checked a)
+                           s `cast` (Sym (Task3.N:Checked[0] <a>_R)) })
+                   (Task3._Check1 @ a)
+                     `cast`
+                   (<Task3.Checked a>_R ->_R Task3.N:Checked[0] <a>_R)
+                   @ f
+                   @ p
+                   $dApplicative
+                   $dChoice
+                   eta) -}
+13a3f0716d3c8ddfe3dd4328b54ec115
+  _Check1 :: Task3.Checked a -> Task3.Checked a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Task3.Checked a) -> ds) -}
+691c71098520816a94af521eaa9d6d43
+  _Natural ::
+    Task3.Prism' GHC.Integer.Type.Integer GHC.Natural.Natural
+  {- Arity: 3,
+     Strictness: <L,U(U(C(U),A),U,A,A,A)><S(S(C(C(C(S)))LLLL)LL),U(U(C(C1(C1(U))),A,A,A,A),A,C(U))><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ (p :: * -> * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   ($dChoice :: Data.Profunctor.Choice.Choice p)
+                   (eta :: p GHC.Natural.Natural (f GHC.Natural.Natural)) ->
+                 Task3.prism
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Natural.Natural
+                   @ GHC.Natural.Natural
+                   Task3._Natural1
+                   GHC.Natural.$fDataNatural_$ctoInteger
+                   @ f
+                   @ p
+                   $dApplicative
+                   $dChoice
+                   eta) -}
+548678c96b5b959182dcf4cd26efb38b
+  _Natural1 ::
+    GHC.Integer.Type.Integer
+    -> Data.Either.Either GHC.Integer.Type.Integer GHC.Natural.Natural
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.gtInteger#
+                        s
+                        Task3._Natural2 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> Data.Either.Left
+                        @ GHC.Integer.Type.Integer
+                        @ GHC.Natural.Natural
+                        s
+                   GHC.Types.True
+                   -> Data.Either.Right
+                        @ GHC.Integer.Type.Integer
+                        @ GHC.Natural.Natural
+                        (GHC.Natural.$fDataNatural_$cfromInteger s) } }) -}
+e6bd9356817d6e70b6a66261999b5458
+  _Natural2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+b5439ba6acf89d0103b6801636d23fc4
+  _TheOne :: GHC.Classes.Eq a => a -> Task3.Prism' a ()
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><L,U(U(C(U),A),U,A,A,A)><S(S(C(C(C(S)))LLLL)LL),U(U(C(C1(C1(U))),A,A,A,A),A,C(U))><L,U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (dk :: a)
+                   @ (f :: * -> *)
+                   @ (p :: * -> * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   ($dChoice :: Data.Profunctor.Choice.Choice p)
+                   (eta :: p () (f ())) ->
+                 Task3.prism
+                   @ a
+                   @ a
+                   @ ()
+                   @ ()
+                   (\ (s :: a) ->
+                    case GHC.Classes.== @ a $dEq dk s of wild {
+                      GHC.Types.False -> Data.Either.Left @ a @ () s
+                      GHC.Types.True -> Task3._TheOne1 @ a })
+                   (\ (ds :: ()) -> dk)
+                   @ f
+                   @ p
+                   $dApplicative
+                   $dChoice
+                   eta) -}
+b13f7ac54de1433e936f37fc71f153ac
+  _TheOne1 :: Data.Either.Either a ()
+  {- HasNoCafRefs,
+     Unfolding: (\ @ a -> Data.Either.Right @ a @ () GHC.Tuple.()) -}
+43661bd1c05fd317423a80a08095fd35
+  preview ::
+    ((a -> Data.Functor.Const.Const (Data.Monoid.First a) a)
+     -> s -> Data.Functor.Const.Const (Data.Monoid.First a) s)
+    -> s -> GHC.Base.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*C1(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   @ s
+                   (p :: (a -> Data.Functor.Const.Const (Data.Monoid.First a) a)
+                         -> s -> Data.Functor.Const.Const (Data.Monoid.First a) s) ->
+                 let {
+                   g :: s -> Data.Functor.Const.Const (Data.Monoid.First a) s
+                   = p (GHC.Base.Just @ a)
+                         `cast`
+                       (<a>_R
+                        ->_R Trans
+                                 (Sym (Data.Monoid.N:First[0]) <a>_N)
+                                 (Sym (Data.Functor.Const.N:Const[0]
+                                           <*>_N <Data.Monoid.First a>_R <a>_P)))
+                 } in
+                 (\ (x :: s) -> g x)
+                   `cast`
+                 (<s>_R
+                  ->_R Trans
+                           (Data.Functor.Const.N:Const[0] <*>_N <Data.Monoid.First a>_R <s>_P)
+                           (Data.Monoid.N:First[0] <a>_N))) -}
+bb72d7294b5c7ab2db924ddb561a8db8
+  prism ::
+    (s -> Data.Either.Either t a) -> (b -> t) -> Task3.Prism s t a b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U><L,U><L,U(1*U(1*C1(U),A),1*U,A,A,A)><S(S(C(C(C(S)))LLLL)LL),U(1*U(1*C1(C1(C1(U))),A,A,A,A),A,1*C1(U))><L,U>,
+     Unfolding: (\ @ s
+                   @ t
+                   @ a
+                   @ b
+                   (dk :: s -> Data.Either.Either t a)
+                   (dk1 :: b -> t)
+                   @ (f :: * -> *)
+                   @ (p :: * -> * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   ($dChoice :: Data.Profunctor.Choice.Choice p)
+                   (eta :: p a (f b)) ->
+                 Data.Profunctor.Unsafe.dimap
+                   @ p
+                   (Data.Profunctor.Choice.$p1Choice @ p $dChoice)
+                   @ s
+                   @ (Data.Either.Either t a)
+                   @ (Data.Either.Either t (f b))
+                   @ (f t)
+                   dk
+                   (let {
+                      f1 :: t -> f t = GHC.Base.pure @ f $dApplicative @ t
+                    } in
+                    let {
+                      ds :: f b -> f t
+                      = GHC.Base.fmap
+                          @ f
+                          (GHC.Base.$p1Applicative @ f $dApplicative)
+                          @ b
+                          @ t
+                          dk1
+                    } in
+                    \ (ds1 :: Data.Either.Either t (f b)) ->
+                    case ds1 of wild {
+                      Data.Either.Left x -> f1 x Data.Either.Right y -> ds y })
+                   (Data.Profunctor.Choice.right'
+                      @ p
+                      $dChoice
+                      @ a
+                      @ (f b)
+                      @ t
+                      eta)) -}
+f81520ab8ca80a5511af7f2b775941e8
+  prism' :: (s -> GHC.Base.Maybe a) -> (a -> s) -> Task3.Prism' s a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(U)><L,U><L,U(U(C(U),A),U,A,A,A)><S(S(C(C(C(S)))LLLL)LL),U(U(C(C1(C1(U))),A,A,A,A),A,C(U))><L,U>,
+     Unfolding: (\ @ s
+                   @ a
+                   (dk :: s -> GHC.Base.Maybe a)
+                   (dk1 :: a -> s)
+                   @ (f :: * -> *)
+                   @ (p :: * -> * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   ($dChoice :: Data.Profunctor.Choice.Choice p)
+                   (eta :: p a (f a)) ->
+                 Task3.prism
+                   @ s
+                   @ s
+                   @ a
+                   @ a
+                   (\ (s1 :: s) ->
+                    case dk s1 of wild {
+                      GHC.Base.Nothing -> Data.Either.Left @ s @ a s1
+                      GHC.Base.Just a1 -> Data.Either.Right @ s @ a a1 })
+                   dk1
+                   @ f
+                   @ p
+                   $dApplicative
+                   $dChoice
+                   eta) -}
+eda37c109d98bd444647475dfd7bcb3b
+  review :: Task3.Prism' s a -> a -> s
+  {- Arity: 2, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task3.review1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <Task3.Prism' s a>_R
+                 ->_R <a>_R
+                 ->_R Trans
+                          (Data.Tagged.N:Tagged[0]
+                               <*>_N <s>_P <Data.Functor.Identity.Identity s>_R)
+                          (Data.Functor.Identity.N:Identity[0] <s>_R)) -}
+e8f0aae1ef15717f08d5a66a55a62042
+  review1 ::
+    Task3.Prism' s a
+    -> a -> Data.Tagged.Tagged s (Data.Functor.Identity.Identity s)
+  {- Arity: 2, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s @ a (p :: Task3.Prism' s a) (a1 :: a) ->
+                 p @ Data.Functor.Identity.Identity
+                   @ Data.Tagged.Tagged
+                   Data.Functor.Identity.$fApplicativeIdentity
+                   Data.Profunctor.Choice.$fChoiceTagged
+                   a1
+                     `cast`
+                   (Trans
+                        (Sym (Data.Functor.Identity.N:Identity[0] <a>_R))
+                        (Sym (Data.Tagged.N:Tagged[0]
+                                  <*>_N <a>_P <Data.Functor.Identity.Identity a>_R)))) -}
+6bb4a9ebe8e2600dfde100ff58dde091
+  unChecked :: Task3.Checked a -> a
+  RecSel Left Task3.Checked
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Task3._Check1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Task3.Checked a>_R ->_R Task3.N:Checked[0] <a>_R) -}
+instance GHC.Show.Show [Task3.Checked] = Task3.$fShowChecked
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

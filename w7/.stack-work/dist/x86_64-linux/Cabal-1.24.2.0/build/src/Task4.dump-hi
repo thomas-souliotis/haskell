@@ -1,0 +1,1266 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-18 22:15:42.004783 UTC
+
+interface w7-0.1.0.0-bXxXCuABYP3q6A8oPpwOS:Task4 8002
+  interface hash: c290f1623e6c1a9eedcf59be3aef553e
+  ABI hash: 6e4236253b5ca212fd6201b6f14e0825
+  export-list hash: 7d35ce4aa0853a489cc70b187a94d38b
+  orphan hash: b1ec18adbfbbed8cf9b6834169fc5656
+  flag hash: 27da261d4a42752ef04f772494c1d291
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task4.both
+  Task4.each
+  Task4.exTree1
+  Task4.exTree2
+  Task4.exTree3
+  Task4.ignored
+  Task4.inorder
+  Task4.labelNodes
+  Task4.over
+  Task4.postorder
+  Task4.preorder
+  Task4.preview
+  Task4.printNodes
+  Task4.set
+  Task4.toListOf
+  Task4.tree
+  Task4.view
+  Task4.Traversal
+  Task4.Traversal'
+  Task4.Tree{Task4.Node Task4.Tip}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity base-4.9.1.0:Data.List.NonEmpty
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Semigroup
+                         base-4.9.1.0:Data.Type.Equality base-4.9.1.0:Data.Version
+                         base-4.9.1.0:Data.Void base-4.9.1.0:GHC.Exts
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.Functor.Const 55e879b32dc0d2620c0cd11b1fc0d5b3
+import  -/  base-4.9.1.0:Data.Functor.Identity 6ee67943d44d50091e12d22df04741f0
+import  -/  base-4.9.1.0:Data.Monoid 51cc9cd8c130d49ba96b7c2c2406022b
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.State 749dca8ca0e6625b32091d445bd92b01
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.State.Class 6d31234b0a911b56412061943d18b89e
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.State.Lazy 371607e50dde46b5f4103b3ab334a497
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree :: Data.Foldable.Foldable Task4.Tree
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Task4.Tree
+                  Task4.$fFoldableTree_$cfold
+                  Task4.$fFoldableTree_$cfoldMap
+                  Task4.$fFoldableTree_$cfoldr
+                  Task4.$fFoldableTree_$cfoldr'
+                  Task4.$fFoldableTree_$cfoldl
+                  Task4.$fFoldableTree_$cfoldl'
+                  Task4.$fFoldableTree_$cfoldr1
+                  Task4.$fFoldableTree_$cfoldl1
+                  Task4.$fFoldableTree_$ctoList
+                  Task4.$fFoldableTree_$cnull
+                  Task4.$fFoldableTree_$clength
+                  Task4.$fFoldableTree_$celem
+                  Task4.$fFoldableTree_$cmaximum
+                  Task4.$fFoldableTree_$cminimum
+                  Task4.$fFoldableTree_$csum
+                  Task4.$fFoldableTree_$cproduct -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree1 ::
+    GHC.Num.Num a => Task4.Tree a -> Data.Monoid.Product a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,U,A,A,A,C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 Task4.$fFoldableTree_$cfoldMap
+                   @ (Data.Monoid.Product a)
+                   @ a
+                   (Data.Monoid.$fMonoidProduct @ a $dNum)
+                   (\ (tpl :: a) -> tpl)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Monoid.N:Product[0] <a>_R))) -}
+ea8e2a2738aa091d15e0eac12a3c4088
+  $fFoldableTree10 :: a
+  {- Strictness: x -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree2 ::
+    GHC.Num.Num a => Task4.Tree a -> Data.Monoid.Sum a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,A,A,A,A,A,C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 Task4.$fFoldableTree_$cfoldMap
+                   @ (Data.Monoid.Sum a)
+                   @ a
+                   (Data.Monoid.$fMonoidSum @ a $dNum)
+                   (\ (tpl :: a) -> tpl)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Monoid.N:Sum[0] <a>_R))) -}
+4fa12768d938386f61def94990379b12
+  $fFoldableTree3 :: a
+  {- Strictness: x -}
+fc53177be9b645ce6e19b1b0057d20fe
+  $fFoldableTree4 :: a
+  {- Strictness: x -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree5 ::
+    GHC.Classes.Eq a => a -> Task4.Tree a -> Data.Monoid.Any
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(C(U)),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 Task4.$fFoldableTree_$cfoldMap
+                   @ Data.Monoid.Any
+                   @ a
+                   Data.Monoid.$fMonoidAny
+                   (GHC.Classes.== @ a $dEq eta)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Monoid.N:Any[0]))) -}
+cdf0b9e45cd3e3bc6eefc13dd341ee4d
+  $fFoldableTree6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+790e658ebd626cecf8a28026c7b58efc
+  $fFoldableTree7 ::
+    a
+    -> (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a
+                   (x :: a)
+                   (k :: GHC.Types.Int -> GHC.Types.Int)[OneShot]
+                   (z :: GHC.Types.Int) ->
+                 case z of wild { GHC.Types.I# x1 ->
+                 k (GHC.Types.I# (GHC.Prim.+# x1 1#)) }) -}
+83352b29fc18d6395b032a6b79e56f7c
+  $fFoldableTree8 :: a -> GHC.Types.Bool -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds :: a) (ds1 :: GHC.Types.Bool) -> GHC.Types.False) -}
+98aa95097fc3b9d05d5be1754f5b38f9
+  $fFoldableTree9 :: a
+  {- Strictness: x -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$celem ::
+    GHC.Classes.Eq a => a -> Task4.Tree a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(C(U)),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.$fFoldableTree5
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R <a>_R
+                 ->_R <Task4.Tree a>_R
+                 ->_R Data.Monoid.N:Any[0]) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfold :: GHC.Base.Monoid m => Task4.Tree m -> m
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,C(C1(U)),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m ($dMonoid :: GHC.Base.Monoid m) (eta :: Task4.Tree m) ->
+                 Task4.$fFoldableTree_$cfoldMap
+                   @ m
+                   @ m
+                   $dMonoid
+                   (GHC.Base.id @ m)
+                   eta) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldMap ::
+    GHC.Base.Monoid m => (a -> m) -> Task4.Tree a -> m
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,U(U,C(C1(U)),A)><L,C(U)><S,1*U> -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldl :: (b -> a -> b) -> b -> Task4.Tree a -> b
+  {- Arity: 3, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b @ a (f :: b -> a -> b) (z :: b) (t1 :: Task4.Tree a) ->
+                 (Task4.$fFoldableTree_$cfoldMap
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo b))
+                    @ a
+                    (Task4.$fFoldableTree_$dMonoid @ b)
+                    (\ (x :: a) (eta :: b) -> f eta x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    t1)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                   z) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldl' :: (b -> a -> b) -> b -> Task4.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (f :: b -> a -> b)
+                   (z0 :: b)
+                   (xs :: Task4.Tree a) ->
+                 Task4.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (b -> b)
+                   (\ (x :: a) (k :: b -> b)[OneShot] (z :: b) ->
+                    case f z x of vx { DEFAULT -> k vx })
+                   (GHC.Base.id @ b)
+                   xs
+                   z0) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldl1 :: (a -> a -> a) -> Task4.Tree a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a (f :: a -> a -> a) (xs :: Task4.Tree a) ->
+                 case (Task4.$fFoldableTree_$cfoldMap
+                         @ (Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                         @ a
+                         (Task4.$fFoldableTree_$dMonoid @ (GHC.Base.Maybe a))
+                         (\ (x :: a) (eta :: GHC.Base.Maybe a) ->
+                          GHC.Base.Just
+                            @ a
+                            (case eta of wild {
+                               GHC.Base.Nothing -> x GHC.Base.Just x1 -> f x1 x }))
+                           `cast`
+                         (<a>_R
+                          ->_R Sym (Data.Monoid.N:Dual[0]
+                                        (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         xs)
+                        `cast`
+                      (Data.Monoid.N:Dual[0]
+                           (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                        (GHC.Base.Nothing @ a) of wild {
+                   GHC.Base.Nothing -> Task4.$fFoldableTree9 @ a
+                   GHC.Base.Just v -> v }) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldr :: (a -> b -> b) -> b -> Task4.Tree a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldr' :: (a -> b -> b) -> b -> Task4.Tree a -> b
+  {- Arity: 3, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (f :: a -> b -> b)
+                   (z0 :: b)
+                   (xs :: Task4.Tree a) ->
+                 (Task4.$fFoldableTree_$cfoldMap
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                    @ a
+                    (Task4.$fFoldableTree_$dMonoid @ (b -> b))
+                    (\ (x :: a) (eta :: b -> b) (z :: b) ->
+                     case f x z of vx { DEFAULT -> eta vx })
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    xs)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   z0) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cfoldr1 :: (a -> a -> a) -> Task4.Tree a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a (f :: a -> a -> a) (xs :: Task4.Tree a) ->
+                 case Task4.$fFoldableTree_$cfoldr
+                        @ a
+                        @ (GHC.Base.Maybe a)
+                        (\ (x :: a) (m :: GHC.Base.Maybe a)[OneShot] ->
+                         GHC.Base.Just
+                           @ a
+                           (case m of wild {
+                              GHC.Base.Nothing -> x GHC.Base.Just y -> f x y }))
+                        (GHC.Base.Nothing @ a)
+                        xs of wild {
+                   GHC.Base.Nothing -> Task4.$fFoldableTree10 @ a
+                   GHC.Base.Just v -> v }) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$clength :: Task4.Tree a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (xs :: Task4.Tree a) ->
+                 Task4.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   (Task4.$fFoldableTree7 @ a)
+                   (GHC.Base.id @ GHC.Types.Int)
+                   xs
+                   Task4.$fFoldableTree6) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cmaximum :: GHC.Classes.Ord a => Task4.Tree a -> a
+  {- Arity: 1, Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   g :: GHC.Base.Monoid (Data.Foldable.Max a)
+                   = Data.Foldable.$fMonoidMax @ a $dOrd
+                 } in
+                 \ (x :: Task4.Tree a) ->
+                 case (Task4.$fFoldableTree_$cfoldMap
+                         @ (Data.Foldable.Max a)
+                         @ a
+                         g
+                         (GHC.Base.Just @ a)
+                           `cast`
+                         (<a>_R ->_R Sym (Data.Foldable.N:Max[0]) <a>_N)
+                         x)
+                        `cast`
+                      (Data.Foldable.N:Max[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Task4.$fFoldableTree4 @ a
+                   GHC.Base.Just v -> v }) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cminimum :: GHC.Classes.Ord a => Task4.Tree a -> a
+  {- Arity: 1, Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   g :: GHC.Base.Monoid (Data.Foldable.Min a)
+                   = Data.Foldable.$fMonoidMin @ a $dOrd
+                 } in
+                 \ (x :: Task4.Tree a) ->
+                 case (Task4.$fFoldableTree_$cfoldMap
+                         @ (Data.Foldable.Min a)
+                         @ a
+                         g
+                         (GHC.Base.Just @ a)
+                           `cast`
+                         (<a>_R ->_R Sym (Data.Foldable.N:Min[0]) <a>_N)
+                         x)
+                        `cast`
+                      (Data.Foldable.N:Min[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Task4.$fFoldableTree3 @ a
+                   GHC.Base.Just v -> v }) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cnull :: Task4.Tree a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 Task4.$fFoldableTree_$cfoldr
+                   @ a
+                   @ GHC.Types.Bool
+                   (Task4.$fFoldableTree8 @ a)
+                   GHC.Types.True) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$cproduct :: GHC.Num.Num a => Task4.Tree a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,U,A,A,A,C(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.$fFoldableTree1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <Task4.Tree a>_R
+                 ->_R Data.Monoid.N:Product[0] <a>_R) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$csum :: GHC.Num.Num a => Task4.Tree a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,A,A,A,A,A,C(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.$fFoldableTree2
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <Task4.Tree a>_R
+                 ->_R Data.Monoid.N:Sum[0] <a>_R) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFoldableTree_$ctoList :: Task4.Tree a -> [a]
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (t1 :: Task4.Tree a) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    Task4.$fFoldableTree_$cfoldr @ a @ b c n t1)) -}
+cc882568c38d5bbfcaccc7d200d96fa4
+  $fFoldableTree_$dMonoid ::
+    GHC.Base.Monoid (Data.Monoid.Dual (Data.Monoid.Endo b))
+  {- Unfolding: (\ @ b ->
+                 Data.Monoid.$fMonoidDual
+                   @ (Data.Monoid.Endo b)
+                   (Data.Monoid.$fMonoidEndo @ b)) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFunctorTree :: GHC.Base.Functor Task4.Tree
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Task4.Tree Task4.$fFunctorTree_$cfmap Task4.$fFunctorTree_$c<$ -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFunctorTree_$c<$ :: a -> Task4.Tree b -> Task4.Tree a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: a) (eta1 :: Task4.Tree b) ->
+                 Task4.$fFunctorTree_$cfmap @ b @ a (\ (ds :: b) -> eta) eta1) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fFunctorTree_$cfmap :: (a -> b) -> Task4.Tree a -> Task4.Tree b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fShowTree :: GHC.Show.Show a => GHC.Show.Show (Task4.Tree a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Task4.Tree a)
+                  (Task4.$fShowTree_$cshowsPrec @ a $dShow)
+                  (Task4.$fShowTree_$cshow @ a $dShow)
+                  (Task4.$fShowTree_$cshowList @ a $dShow) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fShowTree_$cshow ::
+    GHC.Show.Show a => Task4.Tree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Task4.Tree a) ->
+                 Task4.$fShowTree_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fShowTree_$cshowList ::
+    GHC.Show.Show a => [Task4.Tree a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [Task4.Tree a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Task4.Tree a)
+                   (Task4.$fShowTree_$cshowsPrec @ a $dShow Task4.$fFoldableTree6)
+                   eta
+                   eta1) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fShowTree_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Task4.Tree a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U> -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fTraversableTree :: Data.Traversable.Traversable Task4.Tree
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Task4.Tree
+                  Task4.$fFunctorTree
+                  Task4.$fFoldableTree
+                  Task4.$fTraversableTree_$ctraverse
+                  Task4.$fTraversableTree_$csequenceA
+                  Task4.$fTraversableTree_$cmapM
+                  Task4.$fTraversableTree_$csequence -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fTraversableTree_$cmapM ::
+    GHC.Base.Monad m => (a -> m b) -> Task4.Tree a -> m (Task4.Tree b)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLLLL),1*U(1*U(U(C(C1(U)),A),C(U),C(C1(U)),A,A),A,A,A,A)><L,C(U)><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (m :: * -> *)
+                   @ a
+                   @ b
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: a -> m b)
+                   (eta1 :: Task4.Tree a) ->
+                 Task4.$fTraversableTree_$ctraverse
+                   @ m
+                   @ a
+                   @ b
+                   (GHC.Base.$p1Monad @ m $dMonad)
+                   eta
+                   eta1) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fTraversableTree_$csequence ::
+    GHC.Base.Monad m => Task4.Tree (m a) -> m (Task4.Tree a)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLL),1*U(1*U(U(C(C1(U)),A),C(U),C(C1(U)),A,A),A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (m :: * -> *)
+                   @ a
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: Task4.Tree (m a)) ->
+                 Task4.$fTraversableTree_$ctraverse
+                   @ m
+                   @ (m a)
+                   @ a
+                   (GHC.Base.$p1Monad @ m $dMonad)
+                   (GHC.Base.id @ (m a))
+                   eta) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fTraversableTree_$csequenceA ::
+    GHC.Base.Applicative f => Task4.Tree (f a) -> f (Task4.Tree a)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(U),C(C1(U)),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (f :: * -> *)
+                   @ a
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   (eta :: Task4.Tree (f a)) ->
+                 Task4.$fTraversableTree_$ctraverse
+                   @ f
+                   @ (f a)
+                   @ a
+                   $dApplicative
+                   (GHC.Base.id @ (f a))
+                   eta) -}
+412ff176eba547b76bd0c3212f4ffd6f
+  $fTraversableTree_$ctraverse ::
+    GHC.Base.Applicative f =>
+    (a -> f b) -> Task4.Tree a -> f (Task4.Tree b)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,U(U(C(C1(U)),A),C(U),C(C1(U)),A,A)><L,C(U)><S,1*U> -}
+cdd4001a8ef52b1bf696df03e5589b7f
+  $s$fApplicativeStateT ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Control.Monad.Trans.State.Lazy.StateT
+                       s Data.Functor.Identity.Identity)
+                  (Task4.$s$fApplicativeStateT_$s$fApplicativeStateT_$cp1Applicative
+                     @ s)
+                  (Task4.$s$fApplicativeStateT_$s$fApplicativeStateT_$cpure @ s)
+                  (Task4.$s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> @ s)
+                  (Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$c*>
+                     @ Data.Functor.Identity.Identity
+                     @ s
+                     Data.Functor.Identity.$fFunctorIdentity
+                     Data.Functor.Identity.$fMonadIdentity)
+                  (Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$c<*
+                     @ Data.Functor.Identity.Identity
+                     @ s
+                     Data.Functor.Identity.$fFunctorIdentity
+                     Data.Functor.Identity.$fMonadIdentity) -}
+4dba4c9acd86c68521db841a3e0822ee
+  $s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> ::
+    Control.Monad.Trans.State.Lazy.StateT
+      s Data.Functor.Identity.Identity (a -> b)
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U(U,U))><L,1*C1(U(U,U))><L,U>m,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (ds :: Control.Monad.Trans.State.Lazy.StateT
+                            s Data.Functor.Identity.Identity (a -> b))
+                   (ds1 :: Control.Monad.Trans.State.Lazy.StateT
+                             s Data.Functor.Identity.Identity a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (s -> Data.Functor.Identity.Identity (b, s))
+                   @ (Control.Monad.Trans.State.Lazy.StateT
+                        s Data.Functor.Identity.Identity b)
+                   (\ (tpl :: s -> Data.Functor.Identity.Identity (b, s)) -> tpl)
+                     `cast`
+                   (<s -> Data.Functor.Identity.Identity (b, s)>_R
+                    ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                  <s>_N <Data.Functor.Identity.Identity>_R <b>_N))
+                   (\ (s1 :: s) ->
+                    Data.Functor.Identity.$fMonadIdentity_$c>>=
+                      @ (a -> b, s)
+                      @ (b, s)
+                      (ds
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <s>_N <Data.Functor.Identity.Identity>_R <a -> b>_N)
+                         s1)
+                      (\ (ds2 :: (a -> b, s))[OneShot] ->
+                       Data.Functor.Identity.$fMonadIdentity_$c>>=
+                         @ (a, s)
+                         @ (b, s)
+                         (ds1
+                            `cast`
+                          (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <Data.Functor.Identity.Identity>_R <a>_N)
+                            (case ds2 of wild { (,) f s' -> s' }))
+                         (\ (ds3 :: (a, s))[OneShot] ->
+                          Data.Functor.Identity.$fApplicativeIdentity_$cpure
+                            @ (b, s)
+                            (case ds2 of wild { (,) f s' ->
+                             f (case ds3 of wild1 { (,) x s'' -> x }) },
+                             case ds3 of wild { (,) x s'' -> s'' }))))) -}
+23da7415ff41748674b87c1e4a7d6755
+  $s$fApplicativeStateT_$s$fApplicativeStateT_$cp1Applicative ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Task4.$s$fApplicativeStateT_$s$fFunctorStateT -}
+fb90820b37f8a291a68cbcc456e56c82
+  $s$fApplicativeStateT_$s$fApplicativeStateT_$cpure ::
+    a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ s @ a (a1 :: a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (s -> Data.Functor.Identity.Identity (a, s))
+                   @ (Control.Monad.Trans.State.Lazy.StateT
+                        s Data.Functor.Identity.Identity a)
+                   (\ (tpl :: s -> Data.Functor.Identity.Identity (a, s)) -> tpl)
+                     `cast`
+                   (<s -> Data.Functor.Identity.Identity (a, s)>_R
+                    ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                  <s>_N <Data.Functor.Identity.Identity>_R <a>_N))
+                   (\ (s1 :: s) ->
+                    Data.Functor.Identity.$fApplicativeIdentity_$cpure
+                      @ (a, s)
+                      (a1, s1))) -}
+7d9b8bc4971e3e40e8b762cbc29be1ad
+  $s$fApplicativeStateT_$s$fFunctorStateT ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Control.Monad.Trans.State.Lazy.StateT
+                       s Data.Functor.Identity.Identity)
+                  (Task4.$s$fApplicativeStateT_$s$fFunctorStateT_$cfmap @ s)
+                  (Control.Monad.Trans.State.Lazy.$fFunctorStateT_$c<$
+                     @ Data.Functor.Identity.Identity
+                     @ s
+                     Data.Functor.Identity.$fFunctorIdentity) -}
+d47bc01e9fa6ebb5e8c5611a6f395838
+  $s$fApplicativeStateT_$s$fFunctorStateT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Data.Functor.Identity.Identity b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><L,1*C1(U(U,U))><L,U>m,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (f :: a -> b)
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s Data.Functor.Identity.Identity a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (s -> Data.Functor.Identity.Identity (b, s))
+                   @ (Control.Monad.Trans.State.Lazy.StateT
+                        s Data.Functor.Identity.Identity b)
+                   (\ (tpl :: s -> Data.Functor.Identity.Identity (b, s)) -> tpl)
+                     `cast`
+                   (<s -> Data.Functor.Identity.Identity (b, s)>_R
+                    ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                  <s>_N <Data.Functor.Identity.Identity>_R <b>_N))
+                   (\ (s1 :: s) ->
+                    GHC.Base.$
+                      @ 'GHC.Types.PtrRepLifted
+                      @ (Data.Functor.Identity.Identity (a, s))
+                      @ (Data.Functor.Identity.Identity (b, s))
+                      (Data.Functor.Identity.$fFunctorIdentity_$cfmap
+                         @ (a, s)
+                         @ (b, s)
+                         (\ (ds :: (a, s)) ->
+                          (f (case ds of wild { (,) a1 s' -> a1 }),
+                           case ds of wild { (,) a1 s' -> s' })))
+                      (Control.Monad.Trans.State.Lazy.runStateT
+                         @ s
+                         @ Data.Functor.Identity.Identity
+                         @ a
+                         m1
+                         s1))) -}
+1b20eaad4f78d36069b7d4841ffd34e3
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10328610179144476728##
+                   7164812791196797612##
+                   Task4.$trModule
+                   Task4.$tc'Node1) -}
+f951eb0da6e0c35281485c801d3a3434
+  $tc'Node1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Node"#) -}
+9468af1a8e0e69780dc5968f2697b670
+  $tc'Tip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5386053434753465100##
+                   10449041785620531135##
+                   Task4.$trModule
+                   Task4.$tc'Tip1) -}
+9363f5596f146ae8d5641403f822c026
+  $tc'Tip1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Tip"#) -}
+2881850d6576c1ccadab58fbddeaed58
+  $tcTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7450496107232705650##
+                   9073127728360521008##
+                   Task4.$trModule
+                   Task4.$tcTree1) -}
+2489d24d0df78f4c524fdf9a7e65f564
+  $tcTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tree"#) -}
+b4ba669e621c21e8304b60c51429e048
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task4.$trModule2 Task4.$trModule1) -}
+827c7d17dd980b4d6dd95b08562e028c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task4"#) -}
+719da01f4b5c6809380bba52ad2aa844
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w7-0.1.0.0-bXxXCuABYP3q6A8oPpwOS"#) -}
+6eabb7fd43b579aeaebe505c99aa9448
+  $wboth ::
+    GHC.Base.Applicative f => (a -> f b) -> a -> a -> f (b, b)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LL),U(1*U(1*C1(C1(U)),A),A,1*C1(C1(U)),A,A)><L,C(U)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ (f :: * -> *)
+                   (w :: GHC.Base.Applicative f)
+                   (w1 :: a -> f b)
+                   (ww :: a)
+                   (ww1 :: a) ->
+                 GHC.Base.<*>
+                   @ f
+                   w
+                   @ b
+                   @ (b, b)
+                   (GHC.Base.fmap
+                      @ f
+                      (GHC.Base.$p1Applicative @ f w)
+                      @ b
+                      @ (b -> (b, b))
+                      (GHC.Tuple.(,) @ b @ b)
+                      (w1 ww))
+                   (w1 ww1)) -}
+5c8b0bbeedef5c049ea194b8e53d6a8e
+  type Traversal s t a b =
+    forall (f :: * -> *).
+    GHC.Base.Applicative f =>
+    (a -> f b) -> s -> f t
+b489f6a7ab3d96c943d360061113586b
+  type Traversal' s a = Task4.Traversal s s a a
+412ff176eba547b76bd0c3212f4ffd6f
+  data Tree a = Tip | Node (Task4.Tree a) a (Task4.Tree a)
+1953bf4f43a1c3069f340f2786d9e504
+  both :: Task4.Traversal (a, a) (b, b) a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LL),U(1*U(1*C1(C1(U)),A),A,1*C1(C1(U)),A,A)><L,C(U)><S,1*U(U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   @ (f :: * -> *)
+                   (w :: GHC.Base.Applicative f)
+                   (w1 :: a -> f b)
+                   (w2 :: (a, a)) ->
+                 case w2 of ww { (,) ww1 ww2 ->
+                 Task4.$wboth @ a @ b @ f w w1 ww1 ww2 }) -}
+00482bb941ab97e24c2ec12ec9169257
+  each ::
+    Data.Traversable.Traversable t => Task4.Traversal (t a) (t b) a b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLC(S)LLL),1*U(A,A,1*C1(U),A,A,A)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (t :: * -> *)
+                   @ a
+                   @ b
+                   ($dTraversable :: Data.Traversable.Traversable t)
+                   @ (f :: * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f) ->
+                 Data.Traversable.traverse
+                   @ t
+                   $dTraversable
+                   @ f
+                   @ a
+                   @ b
+                   $dApplicative) -}
+267c2782c7b1764600381a6e3c3766e7
+  exTree1 :: Task4.Tree a
+  {- HasNoCafRefs, Unfolding: InlineRule (0, True, True) Task4.Tip -}
+f6697397535ef645395d62c88058ea45
+  exTree2 :: Task4.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Int
+                   (Task4.Tip @ GHC.Types.Int)
+                   Task4.$fFoldableTree6
+                   (Task4.Tip @ GHC.Types.Int)) -}
+f3419c4c90a558114889203507039251
+  exTree3 :: Task4.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Int
+                   Task4.exTree6
+                   Task4.$fFoldableTree6
+                   Task4.exTree4) -}
+3d4f31d7981fe26e66e12249e1a770fa
+  exTree4 :: Task4.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Int
+                   (Task4.Tip @ GHC.Types.Int)
+                   Task4.exTree5
+                   (Task4.Tip @ GHC.Types.Int)) -}
+35b1847143b24695a5a11f3948f0d0c6
+  exTree5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+e0b0670ca7f4457886338998c3648e10
+  exTree6 :: Task4.Tree GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Int
+                   (Task4.Tip @ GHC.Types.Int)
+                   Task4.exTree7
+                   (Task4.Tip @ GHC.Types.Int)) -}
+913ea6a858d807387b47ecd4d6830e60
+  exTree7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+fa8d0ca150b1baa52aca9a888cdf2f51
+  ignored :: Task4.Traversal' s a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U,A,A,A)><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ s
+                   @ a
+                   @ (f :: * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   (eta :: a -> f a) ->
+                 GHC.Base.pure @ f $dApplicative @ s) -}
+79336a06b805ba398688decf0b5a3925
+  inorder :: Task4.Traversal (Task4.Tree a) (Task4.Tree b) a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,U(U(C(C1(U)),A),C(U),C(C1(U)),A,A)><L,C(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   @ (f :: * -> *)
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   (eta :: a -> f b)
+                   (eta1 :: Task4.Tree a) ->
+                 case eta1 of wild {
+                   Task4.Tip
+                   -> GHC.Base.pure @ f $dApplicative @ (Task4.Tree b) (Task4.Tip @ b)
+                   Task4.Node l val r
+                   -> GHC.Base.<*>
+                        @ f
+                        $dApplicative
+                        @ (Task4.Tree b)
+                        @ (Task4.Tree b)
+                        (GHC.Base.<*>
+                           @ f
+                           $dApplicative
+                           @ b
+                           @ (Task4.Tree b -> Task4.Tree b)
+                           (GHC.Base.fmap
+                              @ f
+                              (GHC.Base.$p1Applicative @ f $dApplicative)
+                              @ (Task4.Tree b)
+                              @ (b -> Task4.Tree b -> Task4.Tree b)
+                              (Task4.Node @ b)
+                              (Task4.postorder @ a @ b @ f $dApplicative eta l))
+                           (eta val))
+                        (Task4.postorder @ a @ b @ f $dApplicative eta r) }) -}
+adbb430edb1980326db50f76afe085a6
+  labelNodes ::
+    Task4.Traversal
+      (Task4.Tree a) (Task4.Tree (a, GHC.Types.Int)) a (a, GHC.Types.Int)
+    -> Task4.Tree a -> Task4.Tree (a, GHC.Types.Int)
+  {- Arity: 2, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (traversal :: Task4.Traversal
+                                   (Task4.Tree a)
+                                   (Task4.Tree (a, GHC.Types.Int))
+                                   a
+                                   (a, GHC.Types.Int))
+                   (tr :: Task4.Tree a) ->
+                 case ((traversal
+                          @ (Control.Monad.Trans.State.Lazy.StateT
+                               GHC.Types.Int Data.Functor.Identity.Identity)
+                          (Task4.$s$fApplicativeStateT @ GHC.Types.Int)
+                          (Task4.labelNodes1 @ a)
+                            `cast`
+                          (<a>_R
+                           ->_R Trans
+                                    (<GHC.Types.Int>_R
+                                     ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                                   <((a, GHC.Types.Int), GHC.Types.Int)>_R))
+                                    (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                              <GHC.Types.Int>_N
+                                              <Data.Functor.Identity.Identity>_R
+                                              <(a, GHC.Types.Int)>_N)))
+                          tr)
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Types.Int>_N
+                            <Data.Functor.Identity.Identity>_R
+                            <Task4.Tree (a, GHC.Types.Int)>_N)
+                         Task4.exTree7)
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <(Task4.Tree (a, GHC.Types.Int),
+                             GHC.Types.Int)>_R) of wild { (,) x ds1 ->
+                 x }) -}
+2fcb970cc7f2933a3fc9086514891907
+  labelNodes1 ::
+    a -> GHC.Types.Int -> ((a, GHC.Types.Int), GHC.Types.Int)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (x :: a) (eta :: GHC.Types.Int) ->
+                 ((x, eta),
+                  case eta of wild { GHC.Types.I# x1 ->
+                  GHC.Types.I# (GHC.Prim.+# x1 1#) })) -}
+5cd4c4ca1a56a88b45c6b799bf9a0f20
+  over ::
+    ((a -> Data.Functor.Identity.Identity b)
+     -> s -> Data.Functor.Identity.Identity t)
+    -> (a -> b) -> s -> t
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U))><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.over1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N) (s :: <*>_N) (t :: <*>_N).
+                 <(a -> Data.Functor.Identity.Identity b)
+                  -> s -> Data.Functor.Identity.Identity t>_R
+                 ->_R <a -> b>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <t>_R) -}
+45ec4c8951a0eb6391ab45ce351d0af3
+  over1 ::
+    ((a -> Data.Functor.Identity.Identity b)
+     -> s -> Data.Functor.Identity.Identity t)
+    -> (a -> b) -> s -> Data.Functor.Identity.Identity t
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U))><L,C(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   @ s
+                   @ t
+                   (sa :: (a -> Data.Functor.Identity.Identity b)
+                          -> s -> Data.Functor.Identity.Identity t)
+                   (f :: a -> b)
+                   (s1 :: s) ->
+                 sa
+                   (\ (x :: a) -> f x)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Functor.Identity.N:Identity[0] <b>_R))
+                   s1) -}
+2c8e1d4b882bba08995a28bf64011290
+  postorder :: Task4.Traversal (Task4.Tree a) (Task4.Tree b) a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,U(U(C(C1(U)),A),C(U),C(C1(U)),A,A)><L,C(U)><S,1*U> -}
+26533c2921ae8269af19b50fd1aec9f1
+  preorder :: Task4.Traversal (Task4.Tree a) (Task4.Tree b) a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,U(U(C(C1(U)),A),C(U),C(C1(U)),A,A)><L,C(U)><S,1*U> -}
+939e52f381b7f4a3c64e24bdccfcc299
+  preview ::
+    ((a -> Data.Functor.Const.Const (Data.Monoid.First a) a)
+     -> s -> Data.Functor.Const.Const (Data.Monoid.First a) s)
+    -> s -> GHC.Base.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*C1(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   @ s
+                   (p :: (a -> Data.Functor.Const.Const (Data.Monoid.First a) a)
+                         -> s -> Data.Functor.Const.Const (Data.Monoid.First a) s) ->
+                 let {
+                   g :: s -> Data.Functor.Const.Const (Data.Monoid.First a) s
+                   = p (GHC.Base.Just @ a)
+                         `cast`
+                       (<a>_R
+                        ->_R Trans
+                                 (Sym (Data.Monoid.N:First[0]) <a>_N)
+                                 (Sym (Data.Functor.Const.N:Const[0]
+                                           <*>_N <Data.Monoid.First a>_R <a>_P)))
+                 } in
+                 (\ (x :: s) -> g x)
+                   `cast`
+                 (<s>_R
+                  ->_R Trans
+                           (Data.Functor.Const.N:Const[0] <*>_N <Data.Monoid.First a>_R <s>_P)
+                           (Data.Monoid.N:First[0] <a>_N))) -}
+08a7dd3766811e434f054708a0162b81
+  printNodes ::
+    GHC.Show.Show a =>
+    Task4.Traversal' (Task4.Tree a) a
+    -> Task4.Tree a -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <L,U(A,C(U),A)><L,1*C1(C1(C1(U)))><S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.printNodes1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Show.Show a>_R
+                 ->_R <Task4.Traversal' (Task4.Tree a) a>_R
+                 ->_R <Task4.Tree a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+6d112a802e1569dbf1c08066a88fe0df
+  printNodes1 ::
+    GHC.Show.Show a =>
+    Task4.Traversal' (Task4.Tree a) a
+    -> Task4.Tree a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <L,U(A,C(U),A)><L,1*C1(C1(C1(U)))><S,1*U><S,U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ds :: Task4.Traversal' (Task4.Tree a) a)
+                   (ds1 :: Task4.Tree a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case ds1 of wild {
+                   Task4.Tip
+                   -> GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Task4.printNodes2
+                        GHC.Types.True
+                        eta
+                   Task4.Node ipv ipv1 ipv2
+                   -> case (ds
+                              @ GHC.Types.IO
+                              GHC.Base.$fApplicativeIO
+                              (\ (x :: a)
+                                 (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                               case GHC.IO.Handle.Text.hPutStr2
+                                      GHC.IO.Handle.FD.stdout
+                                      (GHC.Show.show @ a $dShow x)
+                                      GHC.Types.True
+                                      eta1 of ds2 { (#,#) ipv3 ipv4 ->
+                               (# ipv3, x #) })
+                                `cast`
+                              (<a>_R ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                              wild)
+                             `cast`
+                           (GHC.Types.N:IO[0] <Task4.Tree a>_R)
+                             eta of ds2 { (#,#) ipv3 ipv4 ->
+                      (# ipv3, GHC.Tuple.() #) } }) -}
+eec9b3872f5b63f72a5d81ea83f52401
+  printNodes2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Tip"#) -}
+2312cf052000fb783f6882798fa079eb
+  set ::
+    ((a -> Data.Functor.Identity.Identity b)
+     -> s -> Data.Functor.Identity.Identity t)
+    -> s -> b -> t
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U))><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.set1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N) (s :: <*>_N) (t :: <*>_N).
+                 <(a -> Data.Functor.Identity.Identity b)
+                  -> s -> Data.Functor.Identity.Identity t>_R
+                 ->_R <s>_R
+                 ->_R <b>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <t>_R) -}
+f57f349a5770c8e70d760a61089cc5d8
+  set1 ::
+    ((a -> Data.Functor.Identity.Identity b)
+     -> s -> Data.Functor.Identity.Identity t)
+    -> s -> b -> Data.Functor.Identity.Identity t
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U))><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   @ s
+                   @ t
+                   (sa :: (a -> Data.Functor.Identity.Identity b)
+                          -> s -> Data.Functor.Identity.Identity t)
+                   (s1 :: s)
+                   (a1 :: b) ->
+                 sa
+                   (\ (x :: a) -> a1)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Functor.Identity.N:Identity[0] <b>_R))
+                   s1) -}
+f6695c43bdf85f62fb1168b3168a289a
+  toListOf ::
+    ((a -> Data.Functor.Const.Const [a] a)
+     -> s -> Data.Functor.Const.Const [a] s)
+    -> s -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*C1(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   @ s
+                   (p :: (a -> Data.Functor.Const.Const [a] a)
+                         -> s -> Data.Functor.Const.Const [a] s) ->
+                 let {
+                   g :: s -> Data.Functor.Const.Const [a] s
+                   = p (GHC.Base.$fApplicative[]_$cpure @ a)
+                         `cast`
+                       (<a>_R
+                        ->_R Sym (Data.Functor.Const.N:Const[0] <*>_N <[a]>_R <a>_P))
+                 } in
+                 (\ (x :: s) -> g x)
+                   `cast`
+                 (<s>_R ->_R Data.Functor.Const.N:Const[0] <*>_N <[a]>_R <s>_P)) -}
+b8369646031b83bf0ce8254ac35254fa
+  tree :: Task4.Tree GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Char
+                   Task4.tree4
+                   Task4.tree3
+                   Task4.tree1) -}
+493243d7383acb6a4381bfddbaf036c2
+  tree1 :: Task4.Tree GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Char
+                   (Task4.Tip @ GHC.Types.Char)
+                   Task4.tree2
+                   (Task4.Tip @ GHC.Types.Char)) -}
+bad4753b72c7c47e9162dfca166d347b
+  tree2 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'd'#) -}
+add962eddb58dbe586a4f7b97513bcee
+  tree3 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'c'#) -}
+311de476665a66becd397ce085d878bb
+  tree4 :: Task4.Tree GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Char
+                   Task4.tree6
+                   Task4.tree5
+                   (Task4.Tip @ GHC.Types.Char)) -}
+a14b56d0ec0b62c8be27351f3836e186
+  tree5 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'b'#) -}
+fcaea2b68b1a58135e1d36554c414a1c
+  tree6 :: Task4.Tree GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task4.Node
+                   @ GHC.Types.Char
+                   (Task4.Tip @ GHC.Types.Char)
+                   Task4.tree7
+                   (Task4.Tip @ GHC.Types.Char)) -}
+b03c5e8227a1953d21e95d0b3ae7c295
+  tree7 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'a'#) -}
+ab746ba30f5991d35149b654522156a3
+  view ::
+    ((a -> Data.Functor.Const.Const a b)
+     -> s -> Data.Functor.Const.Const a t)
+    -> s -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(C(S)),1*C1(C1(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task4.view1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N) (s :: <*>_N) (t :: <*>_N).
+                 <(a -> Data.Functor.Const.Const a b)
+                  -> s -> Data.Functor.Const.Const a t>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Const.N:Const[0] <*>_N <a>_R <t>_P) -}
+99fcd956e8dd67d41668815b8fe09a29
+  view1 ::
+    ((a -> Data.Functor.Const.Const a b)
+     -> s -> Data.Functor.Const.Const a t)
+    -> s -> Data.Functor.Const.Const a t
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(C(S)),1*C1(C1(U))><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ b
+                   @ s
+                   @ t
+                   (sa :: (a -> Data.Functor.Const.Const a b)
+                          -> s -> Data.Functor.Const.Const a t)
+                   (s1 :: s) ->
+                 sa
+                   (Task4.view2 @ a)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Functor.Const.N:Const[0] <*>_N <a>_R <b>_P))
+                   s1) -}
+23ffd1e10726795807faf92151921b45
+  view2 :: a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ @ a (tpl :: a) -> tpl) -}
+instance [safe] Data.Foldable.Foldable [Task4.Tree]
+  = Task4.$fFoldableTree
+instance [safe] GHC.Base.Functor [Task4.Tree] = Task4.$fFunctorTree
+instance [safe] GHC.Show.Show [Task4.Tree] = Task4.$fShowTree
+instance [safe] Data.Traversable.Traversable [Task4.Tree]
+  = Task4.$fTraversableTree
+"SPEC/Task4 $fApplicativeStateT @ Identity _" [ALWAYS] forall @ s
+                                                              ($dMonad :: GHC.Base.Monad
+                                                                            Data.Functor.Identity.Identity)
+                                                              ($dFunctor :: GHC.Base.Functor
+                                                                              Data.Functor.Identity.Identity)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT @ Data.Functor.Identity.Identity
+                                                     @ s
+                                                     $dFunctor
+                                                     $dMonad
+  = Task4.$s$fApplicativeStateT @ s
+"SPEC/Task4 $fApplicativeStateT_$c<*> @ Identity _" [ALWAYS] forall @ s
+                                                                    ($dMonad :: GHC.Base.Monad
+                                                                                  Data.Functor.Identity.Identity)
+                                                                    ($dFunctor :: GHC.Base.Functor
+                                                                                    Data.Functor.Identity.Identity)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$c<*> @ Data.Functor.Identity.Identity
+                                                           @ s
+                                                           $dFunctor
+                                                           $dMonad
+  = Task4.$s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> @ s
+"SPEC/Task4 $fApplicativeStateT_$cp1Applicative @ Identity _" [ALWAYS] forall @ s
+                                                                              ($dMonad :: GHC.Base.Monad
+                                                                                            Data.Functor.Identity.Identity)
+                                                                              ($dFunctor :: GHC.Base.Functor
+                                                                                              Data.Functor.Identity.Identity)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$cp1Applicative @ Data.Functor.Identity.Identity
+                                                                     @ s
+                                                                     $dFunctor
+                                                                     $dMonad
+  = Task4.$s$fApplicativeStateT_$s$fApplicativeStateT_$cp1Applicative
+      @ s
+"SPEC/Task4 $fApplicativeStateT_$cpure @ Identity _" [ALWAYS] forall @ s
+                                                                     ($dMonad :: GHC.Base.Monad
+                                                                                   Data.Functor.Identity.Identity)
+                                                                     ($dFunctor :: GHC.Base.Functor
+                                                                                     Data.Functor.Identity.Identity)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$cpure @ Data.Functor.Identity.Identity
+                                                            @ s
+                                                            $dFunctor
+                                                            $dMonad
+  = Task4.$s$fApplicativeStateT_$s$fApplicativeStateT_$cpure @ s
+"SPEC/Task4 $fFunctorStateT @ Identity _" [ALWAYS] forall @ s
+                                                          ($dFunctor :: GHC.Base.Functor
+                                                                          Data.Functor.Identity.Identity)
+  Control.Monad.Trans.State.Lazy.$fFunctorStateT @ Data.Functor.Identity.Identity
+                                                 @ s
+                                                 $dFunctor
+  = Task4.$s$fApplicativeStateT_$s$fFunctorStateT @ s
+"SPEC/Task4 $fFunctorStateT_$cfmap @ Identity _" [ALWAYS] forall @ s
+                                                                 ($dFunctor :: GHC.Base.Functor
+                                                                                 Data.Functor.Identity.Identity)
+  Control.Monad.Trans.State.Lazy.$fFunctorStateT_$cfmap @ Data.Functor.Identity.Identity
+                                                        @ s
+                                                        $dFunctor
+  = Task4.$s$fApplicativeStateT_$s$fFunctorStateT_$cfmap @ s
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,327 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-10 16:07:29.372336 UTC
+
+interface w6-0.1.0.0-W9Ugrx6kTHIl3x6l8azM:Task3 8002
+  interface hash: 90d80c39cb08b80f51bf6dba099575b8
+  ABI hash: ae9cb044255f73179b7e5c2ab82eedf9
+  export-list hash: 30d39ced324bd2f4fb8488cfdb0358af
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 11b94d793681c29345de1ecbe8ba52a7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task3.composeFunctor
+  Task3.listFunctor
+  Task3.sumFunctor
+  Task3.Compose{Task3.Compose getCompose}
+  Task3.FunctorDict{Task3.FunctorDict fmap_}
+  Task3.Sum{Task3.Inl Task3.Inr}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+9361ec2e3f769dfaaa26e181505b1bec
+  $fFunctorCompose ::
+    (GHC.Base.Functor f, GHC.Base.Functor g) =>
+    GHC.Base.Functor (Task3.Compose f g)
+  DFunId
+  {- Arity: 2, Strictness: <L,A><L,A>m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *)
+                      @ (g :: * -> *)
+                      ($dFunctor :: GHC.Base.Functor f)
+                      ($dFunctor1 :: GHC.Base.Functor g).
+                  @ (Task3.Compose f g)
+                  (Task3.$fFunctorCompose_$cfmap @ f @ g $dFunctor $dFunctor1)
+                  (Task3.$fFunctorCompose_$c<$ @ f @ g $dFunctor $dFunctor1) -}
+9361ec2e3f769dfaaa26e181505b1bec
+  $fFunctorCompose1 ::
+    (a -> b) -> Task3.Compose f g a -> Task3.Compose f g b
+  {- Strictness: x -}
+9361ec2e3f769dfaaa26e181505b1bec
+  $fFunctorCompose_$c<$ ::
+    (GHC.Base.Functor f, GHC.Base.Functor g) =>
+    forall a b. a -> Task3.Compose f g b -> Task3.Compose f g a
+  {- Arity: 3, Strictness: <B,A><B,A><B,A>b,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   ($dFunctor1 :: GHC.Base.Functor g)
+                   @ a
+                   @ b
+                   (eta :: a) ->
+                 case Task3.$fFunctorCompose1
+                 ret_ty (Task3.Compose f g b -> Task3.Compose f g a)
+                 of {}) -}
+9361ec2e3f769dfaaa26e181505b1bec
+  $fFunctorCompose_$cfmap ::
+    (GHC.Base.Functor f, GHC.Base.Functor g) =>
+    forall a b. (a -> b) -> Task3.Compose f g a -> Task3.Compose f g b
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   ($dFunctor1 :: GHC.Base.Functor g) ->
+                 Task3.$fFunctorCompose1 @ f @ g) -}
+b3a811138cee92499037361eb94127d2
+  $fFunctorSum ::
+    (GHC.Base.Functor f, GHC.Base.Functor g) =>
+    GHC.Base.Functor (Task3.Sum f g)
+  DFunId
+  {- Arity: 2, Strictness: <L,A><L,A>m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *)
+                      @ (g :: * -> *)
+                      ($dFunctor :: GHC.Base.Functor f)
+                      ($dFunctor1 :: GHC.Base.Functor g).
+                  @ (Task3.Sum f g)
+                  (Task3.$fFunctorSum_$cfmap @ f @ g $dFunctor $dFunctor1)
+                  (Task3.$fFunctorSum_$c<$ @ f @ g $dFunctor $dFunctor1) -}
+b3a811138cee92499037361eb94127d2
+  $fFunctorSum1 :: (a -> b) -> Task3.Sum f g a -> Task3.Sum f g b
+  {- Strictness: x -}
+b3a811138cee92499037361eb94127d2
+  $fFunctorSum_$c<$ ::
+    (GHC.Base.Functor f, GHC.Base.Functor g) =>
+    forall a b. a -> Task3.Sum f g b -> Task3.Sum f g a
+  {- Arity: 3, Strictness: <B,A><B,A><B,A>b,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   ($dFunctor1 :: GHC.Base.Functor g)
+                   @ a
+                   @ b
+                   (eta :: a) ->
+                 case Task3.$fFunctorSum1
+                 ret_ty (Task3.Sum f g b -> Task3.Sum f g a)
+                 of {}) -}
+b3a811138cee92499037361eb94127d2
+  $fFunctorSum_$cfmap ::
+    (GHC.Base.Functor f, GHC.Base.Functor g) =>
+    forall a b. (a -> b) -> Task3.Sum f g a -> Task3.Sum f g b
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   ($dFunctor1 :: GHC.Base.Functor g) ->
+                 Task3.$fFunctorSum1 @ f @ g) -}
+5b26a44b078882be216be76ecab8f6ce
+  $tc'Compose :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3581508486369930820##
+                   8139589243308727302##
+                   Task3.$trModule
+                   Task3.$tc'Compose1) -}
+59c276faf7e66664b62fab72c7f55a31
+  $tc'Compose1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Compose"#) -}
+50b8ca3ea6e69481a709c760e801e445
+  $tc'FunctorDict :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2300493545090917164##
+                   11953527662754031206##
+                   Task3.$trModule
+                   Task3.$tc'FunctorDict1) -}
+f1f591ae9d95e0422fa95aa7341f748e
+  $tc'FunctorDict1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'FunctorDict"#) -}
+d2b6516fea36496cfae887e2d3621b53
+  $tc'Inl :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10287470065092446674##
+                   139463039687814674##
+                   Task3.$trModule
+                   Task3.$tc'Inl1) -}
+d5d8231d7be843059eb2e8b014fea1b5
+  $tc'Inl1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Inl"#) -}
+ba5741c91c8248b63e6e1b5e6fc87f30
+  $tc'Inr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15255071669265663178##
+                   6284981004935821717##
+                   Task3.$trModule
+                   Task3.$tc'Inr1) -}
+3e8d6ef4603bd298cc3e6364121b03b9
+  $tc'Inr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Inr"#) -}
+dc3f887a5b55166f332844372513c83f
+  $tcCompose :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6607499905317551406##
+                   10169999905249041540##
+                   Task3.$trModule
+                   Task3.$tcCompose1) -}
+f7d34b0d36d21f07b6322ed06b152bf1
+  $tcCompose1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Compose"#) -}
+327d3ff10660d58b59e170a3ec1522a5
+  $tcFunctorDict :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3107370911227968028##
+                   17800621835702212030##
+                   Task3.$trModule
+                   Task3.$tcFunctorDict1) -}
+979aa6cc1bbb3e7511acf85ca5640874
+  $tcFunctorDict1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FunctorDict"#) -}
+a15701718f84ef73dce3843c9af70544
+  $tcSum :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10574306566841532418##
+                   16185831499436586719##
+                   Task3.$trModule
+                   Task3.$tcSum1) -}
+64e6af0e73527b61d31fbaa48661a295
+  $tcSum1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sum"#) -}
+3b0f3d3fca2c7a418ecddfc40a4754a2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task3.$trModule2 Task3.$trModule1) -}
+353904773f0e75ebb2f6509fb8634f12
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task3"#) -}
+fed3c42579c50333de70c5db108cb728
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w6-0.1.0.0-W9Ugrx6kTHIl3x6l8azM"#) -}
+325a2d520169c0f0011017d1fc59b7ef
+  $wsumFunctor ::
+    Task3.FunctorDict f
+    -> Task3.FunctorDict g
+    -> (# forall a b. (a -> b) -> Task3.Sum f g a -> Task3.Sum f g b #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)))><L,U(C(C1(U)))>, Inline: [0],
+     Unfolding: (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   (w :: Task3.FunctorDict f)
+                   (w1 :: Task3.FunctorDict g) ->
+                 (# \ @ a @ b (a1 :: a -> b) (ds :: Task3.Sum f g a) ->
+                    case ds of wild {
+                      Task3.Inl b1
+                      -> Task3.Inl
+                           @ f
+                           @ g
+                           @ b
+                           (case w of wild1 { Task3.FunctorDict ds1 -> ds1 @ a @ b a1 b1 })
+                      Task3.Inr b1
+                      -> Task3.Inr
+                           @ f
+                           @ g
+                           @ b
+                           (case w1 of wild1 { Task3.FunctorDict ds1 ->
+                            ds1 @ a @ b a1 b1 }) } #)) -}
+9361ec2e3f769dfaaa26e181505b1bec
+  type role Compose representational nominal nominal
+  newtype Compose (f :: * -> *) (g :: * -> *) a
+    = Compose {getCompose :: f (g a)}
+f643dbcde106d15d6e42a8ce8095a549
+  data FunctorDict (f :: * -> *)
+    = FunctorDict {fmap_ :: forall a b. (a -> b) -> f a -> f b}
+b3a811138cee92499037361eb94127d2
+  type role Sum representational representational nominal
+  data Sum (f :: * -> *) (g :: * -> *) a = Inl (f a) | Inr (g a)
+5b506532317db06060bed125e8c5468e
+  composeFunctor ::
+    Task3.FunctorDict f
+    -> Task3.FunctorDict g -> Task3.FunctorDict (Task3.Compose f g)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(C(C1(U)))><L,U(C(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   (w :: Task3.FunctorDict f)
+                   (w1 :: Task3.FunctorDict g) ->
+                 Task3.FunctorDict
+                   @ (Task3.Compose f g)
+                   (\ @ a @ b (a1 :: a -> b) (ds :: Task3.Compose f g a) ->
+                    case w of wild { Task3.FunctorDict ds1 ->
+                    (ds1
+                       @ (g a)
+                       @ (g b)
+                       (case w1 of wild1 { Task3.FunctorDict ds2 -> ds2 @ a @ b a1 })
+                       ds `cast` (Task3.N:Compose[0] <f>_R <g>_N <a>_N))
+                      `cast`
+                    (Sym (Task3.N:Compose[0] <f>_R <g>_N <b>_N)) })) -}
+ec5ed83db53587e3d4a25e1357847397
+  fmap_ :: Task3.FunctorDict f -> forall a b. (a -> b) -> f a -> f b
+  RecSel Left Task3.FunctorDict
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (f :: * -> *) (dk :: Task3.FunctorDict f) @ a @ b ->
+                 case dk of wild { Task3.FunctorDict ds -> ds @ a @ b }) -}
+39f038b54a3776ff7bcacbbc72f0800d
+  getCompose :: Task3.Compose f g a -> f (g a)
+  RecSel Left Task3.Compose
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Task3.getCompose1
+                  `cast`
+                (forall (f :: <* -> *>_N) (g :: <* -> *>_N) (a :: <*>_N).
+                 <Task3.Compose f g a>_R
+                 ->_R Task3.N:Compose[0] <f>_R <g>_N <a>_N) -}
+ceeb5ad0df4c063eb243262e977ea398
+  getCompose1 :: Task3.Compose f g a -> Task3.Compose f g a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   @ a
+                   (ds :: Task3.Compose f g a) ->
+                 ds) -}
+42f06b3a3f1c731be8babc959a23ec2c
+  listFunctor :: Task3.FunctorDict []
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Task3.FunctorDict @ [] GHC.Base.map) -}
+36e777b0c63bb2f07cda1a4441536bcf
+  sumFunctor ::
+    Task3.FunctorDict f
+    -> Task3.FunctorDict g -> Task3.FunctorDict (Task3.Sum f g)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)))><L,U(C(C1(U)))>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (f :: * -> *)
+                   @ (g :: * -> *)
+                   (w :: Task3.FunctorDict f)
+                   (w1 :: Task3.FunctorDict g) ->
+                 case Task3.$wsumFunctor @ f @ g w w1 of ww { Unit# ww1 ->
+                 Task3.FunctorDict @ (Task3.Sum f g) ww1 }) -}
+instance [safe] GHC.Base.Functor [Task3.Compose]
+  = Task3.$fFunctorCompose
+instance [safe] GHC.Base.Functor [Task3.Sum] = Task3.$fFunctorSum
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,928 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-11 23:38:50.556633 UTC
+
+interface w6-0.1.0.0-W9Ugrx6kTHIl3x6l8azM:Task5 8002
+  interface hash: ad5606b8b73c24161efa5b1d4f858714
+  ABI hash: a135f43cb4d080a04bc64ca90d7397c2
+  export-list hash: 778335b3e3cce60c8be2502937ded274
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d4848b28b8fcbacfec9de1d1a1e3a10e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task5.fromTraceF
+  Task5.toTraceF
+  Task5.Free{Task5.Return Task5.Wrap}
+  Task5.IVar{Task5.IVar}
+  Task5.IVarContents{Task5.Blocked Task5.Empty Task5.Full}
+  Task5.Par{Task5.Par runCont}
+  Task5.Trace{Task5.Done Task5.Fork Task5.Get Task5.LiftIO Task5.New Task5.Put Task5.Yield}
+  Task5.Trace'
+  Task5.TraceF{Task5.ForkF Task5.GetF Task5.LiftIOF Task5.NewF Task5.PutF Task5.YieldF}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.IORef 71c87b0b25a8bca3e3f4497725f5e543
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IORef 306bd532f2f3b000347cbe6316adc20e
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  deepseq-1.4.2.0@deepseq-1.4.2.0:Control.DeepSeq 3b9ddb93b8ec16cf9a98d6096b46c390
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree ::
+    GHC.Base.Functor f => GHC.Base.Applicative (Task5.Free f)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *) ($dFunctor :: GHC.Base.Functor f).
+                  @ (Task5.Free f)
+                  (Task5.$fFunctorFree @ f $dFunctor)
+                  (Task5.$fApplicativeFree_$cpure @ f $dFunctor)
+                  (Task5.$fApplicativeFree_$c<*> @ f $dFunctor)
+                  (Task5.$fApplicativeFree_$c*> @ f $dFunctor)
+                  (Task5.$fApplicativeFree_$c<* @ f $dFunctor) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree1 :: a -> Task5.Free f (b -> a)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ b @ (f :: * -> *) @ a (x1 :: a) ->
+                 Task5.Return @ f @ (b -> a) (\ (ds :: b) -> x1)) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree_$c*> ::
+    GHC.Base.Functor f =>
+    forall a b. Task5.Free f a -> Task5.Free f b -> Task5.Free f b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (eta :: Task5.Free f a)
+                   (eta1 :: Task5.Free f b) ->
+                 Task5.$fApplicativeFree_$c<*>
+                   @ f
+                   $dFunctor
+                   @ b
+                   @ b
+                   (Task5.$fApplicativeFree_$c>>=
+                      @ f
+                      $dFunctor
+                      @ a
+                      @ (b -> b)
+                      eta
+                      (\ (x1 :: a) ->
+                       Task5.Return @ f @ (b -> b) (GHC.Base.breakpoint @ b)))
+                   eta1) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree_$c<* ::
+    GHC.Base.Functor f =>
+    forall a b. Task5.Free f a -> Task5.Free f b -> Task5.Free f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (eta :: Task5.Free f a)
+                   (eta1 :: Task5.Free f b) ->
+                 Task5.$fApplicativeFree_$c<*>
+                   @ f
+                   $dFunctor
+                   @ b
+                   @ a
+                   (Task5.$fApplicativeFree_$c>>=
+                      @ f
+                      $dFunctor
+                      @ a
+                      @ (b -> a)
+                      eta
+                      (Task5.$fApplicativeFree1 @ b @ f @ a))
+                   eta1) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree_$c<*> ::
+    GHC.Base.Functor f =>
+    forall a b.
+    Task5.Free f (a -> b) -> Task5.Free f a -> Task5.Free f b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (m1 :: Task5.Free f (a -> b))
+                   (m2 :: Task5.Free f a) ->
+                 Task5.$fApplicativeFree_$c>>=
+                   @ f
+                   $dFunctor
+                   @ (a -> b)
+                   @ b
+                   m1
+                   (\ (x1 :: a -> b) ->
+                    Task5.$fApplicativeFree_$c>>=
+                      @ f
+                      $dFunctor
+                      @ a
+                      @ b
+                      m2
+                      (\ (x2 :: a) -> Task5.Return @ f @ b (x1 x2)))) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree_$c>>= ::
+    GHC.Base.Functor f =>
+    forall a b.
+    Task5.Free f a -> (a -> Task5.Free f b) -> Task5.Free f b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><L,C(U)> -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree_$cpure ::
+    GHC.Base.Functor f => forall a. a -> Task5.Free f a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fApplicativeFree_$creturn -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fApplicativeFree_$creturn ::
+    GHC.Base.Functor f => forall a. a -> Task5.Free f a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   (eta :: a) ->
+                 Task5.Return @ f @ a eta) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar :: GHC.Base.Applicative Task5.Par
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Task5.Par
+                  Task5.$fFunctorPar
+                  Task5.$fApplicativePar_$cpure
+                  Task5.$fApplicativePar_$c<*>
+                  Task5.$fApplicativePar_$c*>
+                  Task5.$fApplicativePar_$c<* -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar1 ::
+    Task5.Par a -> Task5.Par b -> (a -> Task5.Trace) -> Task5.Trace
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: Task5.Par a)
+                   (eta1 :: Task5.Par b)
+                   (eta2 :: a -> Task5.Trace) ->
+                 eta `cast` (Task5.N:Par[0] <a>_R)
+                   (\ (x :: a) ->
+                    eta1 `cast` (Task5.N:Par[0] <b>_R) (\ (a1 :: b) -> eta2 x))) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar2 ::
+    Task5.Par a -> Task5.Par b -> (b -> Task5.Trace) -> Task5.Trace
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: Task5.Par a)
+                   (eta1 :: Task5.Par b)
+                   (eta2 :: b -> Task5.Trace) ->
+                 eta `cast` (Task5.N:Par[0] <a>_R)
+                   (\ (x :: a) ->
+                    eta1 `cast` (Task5.N:Par[0] <b>_R) (\ (a1 :: b) -> eta2 a1))) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar3 ::
+    Task5.Par (a -> b)
+    -> Task5.Par a -> (b -> Task5.Trace) -> Task5.Trace
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (m1 :: Task5.Par (a -> b))
+                   (m2 :: Task5.Par a)
+                   (eta :: b -> Task5.Trace) ->
+                 m1 `cast` (Task5.N:Par[0] <a -> b>_R)
+                   (\ (a1 :: a -> b) ->
+                    m2 `cast` (Task5.N:Par[0] <a>_R) (\ (a2 :: a) -> eta (a1 a2)))) -}
+8468b820515d5f6f89dd82e81ecdc704
+  $fApplicativePar4 :: a -> (a -> Task5.Trace) -> Task5.Trace
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (a1 :: a) (ds :: a -> Task5.Trace) -> ds a1) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar_$c*> :: Task5.Par a -> Task5.Par b -> Task5.Par b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fApplicativePar2
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Task5.Par a>_R
+                 ->_R <Task5.Par b>_R
+                 ->_R Sym (Task5.N:Par[0] <b>_R)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar_$c<* :: Task5.Par a -> Task5.Par b -> Task5.Par a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fApplicativePar1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Task5.Par a>_R
+                 ->_R <Task5.Par b>_R
+                 ->_R Sym (Task5.N:Par[0] <a>_R)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar_$c<*> ::
+    Task5.Par (a -> b) -> Task5.Par a -> Task5.Par b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fApplicativePar3
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Task5.Par (a -> b)>_R
+                 ->_R <Task5.Par a>_R
+                 ->_R Sym (Task5.N:Par[0] <b>_R)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fApplicativePar_$cpure :: a -> Task5.Par a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fApplicativePar4
+                  `cast`
+                (forall (a :: <*>_N). <a>_R ->_R Sym (Task5.N:Par[0] <a>_R)) -}
+44070ef754ec62154673a1bbeef2c40d
+  $fEqIVar :: GHC.Classes.Eq (Task5.IVar a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Task5.IVar a)
+                  (Task5.$fEqIVar_$c== @ a)
+                  (Task5.$fEqIVar_$c/= @ a) -}
+44070ef754ec62154673a1bbeef2c40d
+  $fEqIVar_$c/= :: Task5.IVar a -> Task5.IVar a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a (x :: Task5.IVar a) (y :: Task5.IVar a) ->
+                 GHC.Classes.not (Task5.$fEqIVar_$c== @ a x y)) -}
+44070ef754ec62154673a1bbeef2c40d
+  $fEqIVar_$c== :: Task5.IVar a -> Task5.IVar a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds :: Task5.IVar a) (ds1 :: Task5.IVar a) ->
+                 GHC.STRef.$fEqSTRef_$c==
+                   @ GHC.Prim.RealWorld
+                   @ (Task5.IVarContents a)
+                   ds
+                     `cast`
+                   (Trans
+                        (Task5.N:IVar[0] <a>_R)
+                        (GHC.IORef.N:IORef[0] <Task5.IVarContents a>_N))
+                   ds1
+                     `cast`
+                   (Trans
+                        (Task5.N:IVar[0] <a>_R)
+                        (GHC.IORef.N:IORef[0] <Task5.IVarContents a>_N))) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fFunctorFree ::
+    GHC.Base.Functor f => GHC.Base.Functor (Task5.Free f)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *) ($dFunctor :: GHC.Base.Functor f).
+                  @ (Task5.Free f)
+                  (Task5.$fFunctorFree_$cfmap @ f $dFunctor)
+                  (Task5.$fFunctorFree_$c<$ @ f $dFunctor) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fFunctorFree_$c<$ ::
+    GHC.Base.Functor f =>
+    forall a b. a -> Task5.Free f b -> Task5.Free f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (eta :: a)
+                   (m1 :: Task5.Free f b) ->
+                 Task5.$fApplicativeFree_$c>>=
+                   @ f
+                   $dFunctor
+                   @ b
+                   @ a
+                   m1
+                   (\ (x1 :: b) -> Task5.Return @ f @ a eta)) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fFunctorFree_$cfmap ::
+    GHC.Base.Functor f =>
+    forall a b. (a -> b) -> Task5.Free f a -> Task5.Free f b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,C(U)><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (f1 :: a -> b)
+                   (m1 :: Task5.Free f a) ->
+                 Task5.$fApplicativeFree_$c>>=
+                   @ f
+                   $dFunctor
+                   @ a
+                   @ b
+                   m1
+                   (\ (x1 :: a) -> Task5.Return @ f @ b (f1 x1))) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fFunctorPar :: GHC.Base.Functor Task5.Par
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Task5.Par Task5.$fFunctorPar_$cfmap Task5.$fFunctorPar_$c<$ -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fFunctorPar1 ::
+    a -> Task5.Par b -> (a -> Task5.Trace) -> Task5.Trace
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: a)
+                   (eta1 :: Task5.Par b)
+                   (eta2 :: a -> Task5.Trace) ->
+                 eta1 `cast` (Task5.N:Par[0] <b>_R) (\ (x :: b) -> eta2 eta)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fFunctorPar2 ::
+    (a -> b) -> Task5.Par a -> (b -> Task5.Trace) -> Task5.Trace
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(U)><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (f :: a -> b)
+                   (m :: Task5.Par a)
+                   (c :: b -> Task5.Trace) ->
+                 m `cast` (Task5.N:Par[0] <a>_R)
+                   (GHC.Base.. @ b @ Task5.Trace @ a c f)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fFunctorPar_$c<$ :: a -> Task5.Par b -> Task5.Par a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fFunctorPar1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a>_R ->_R <Task5.Par b>_R ->_R Sym (Task5.N:Par[0] <a>_R)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fFunctorPar_$cfmap :: (a -> b) -> Task5.Par a -> Task5.Par b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(U)><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fFunctorPar2
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R ->_R <Task5.Par a>_R ->_R Sym (Task5.N:Par[0] <b>_R)) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fMonadFree :: GHC.Base.Functor f => GHC.Base.Monad (Task5.Free f)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *) ($dFunctor :: GHC.Base.Functor f).
+                  @ (Task5.Free f)
+                  (Task5.$fMonadFree_$cp1Monad @ f $dFunctor)
+                  (Task5.$fApplicativeFree_$c>>= @ f $dFunctor)
+                  (Task5.$fMonadFree_$c>> @ f $dFunctor)
+                  (Task5.$fApplicativeFree_$creturn @ f $dFunctor)
+                  (Task5.$fMonadFree_$cfail @ f $dFunctor) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fMonadFree1 ::
+    GHC.Base.Functor f => GHC.Base.String -> Task5.Free f a
+  {- Arity: 2, Strictness: <B,A><B,U>x, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   @ a
+                   (w :: GHC.Base.Functor f)
+                   (w1 :: GHC.Base.String) ->
+                 Task5.$wlvl @ f @ a w1) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fMonadFree_$c>> ::
+    GHC.Base.Functor f =>
+    forall a b. Task5.Free f a -> Task5.Free f b -> Task5.Free f b
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (m1 :: Task5.Free f a)
+                   (k :: Task5.Free f b) ->
+                 Task5.$fApplicativeFree_$c>>=
+                   @ f
+                   $dFunctor
+                   @ a
+                   @ b
+                   m1
+                   (\ (ds :: a) -> k)) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fMonadFree_$cfail ::
+    GHC.Base.Functor f => forall a. GHC.Base.String -> Task5.Free f a
+  {- Arity: 2, Strictness: <B,A><B,U>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   (eta :: GHC.Base.String) ->
+                 Task5.$fMonadFree1 @ f @ a $dFunctor eta) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $fMonadFree_$cp1Monad ::
+    GHC.Base.Functor f => GHC.Base.Applicative (Task5.Free f)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Unfolding: InlineRule (0, True, True) Task5.$fApplicativeFree -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fMonadPar :: GHC.Base.Monad Task5.Par
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Task5.Par
+                  Task5.$fApplicativePar
+                  Task5.$fMonadPar_$c>>=
+                  Task5.$fMonadPar_$c>>
+                  Task5.$fApplicativePar_$cpure
+                  Task5.$fMonadPar_$s$dmfail -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fMonadPar1 ::
+    Task5.Par a
+    -> (a -> Task5.Par b) -> (b -> Task5.Trace) -> Task5.Trace
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (m :: Task5.Par a)
+                   (k :: a -> Task5.Par b)
+                   (c :: b -> Task5.Trace) ->
+                 m `cast` (Task5.N:Par[0] <a>_R)
+                   (\ (a1 :: a) -> (k a1) `cast` (Task5.N:Par[0] <b>_R) c)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fMonadPar_$c>> :: Task5.Par a -> Task5.Par b -> Task5.Par b
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m1 :: Task5.Par a)
+                   (k :: Task5.Par b)
+                   (eta :: b -> Task5.Trace) ->
+                 (Task5.$fMonadPar_$c>>= @ a @ b m1 (\ (ds :: a) -> k))
+                   `cast`
+                 (Task5.N:Par[0] <b>_R)
+                   eta)
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Task5.Par a>_R
+                 ->_R <Task5.Par b>_R
+                 ->_R Sym (Task5.N:Par[0] <b>_R)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fMonadPar_$c>>= ::
+    Task5.Par a -> (a -> Task5.Par b) -> Task5.Par b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.$fMonadPar1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Task5.Par a>_R
+                 ->_R <a -> Task5.Par b>_R
+                 ->_R Sym (Task5.N:Par[0] <b>_R)) -}
+fd0b85088cacb35a9a514b34d37f2cdf
+  $fMonadPar_$s$dmfail :: GHC.Base.String -> Task5.Par a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (-1, True, True)
+                (\ @ a (s :: GHC.Base.String) ->
+                 GHC.Err.errorWithoutStackTrace
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Task5.Par a)
+                   s) -}
+44070ef754ec62154673a1bbeef2c40d
+  $fNFDataIVar :: Control.DeepSeq.NFData (Task5.IVar a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Task5.$fNFDataIVar_$crnf
+                  `cast`
+                (forall (a :: <*>_N).
+                 Sym (Control.DeepSeq.N:NFData[0] <Task5.IVar a>_N)) -}
+44070ef754ec62154673a1bbeef2c40d
+  $fNFDataIVar_$crnf :: Task5.IVar a -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Task5.IVar a) -> GHC.Tuple.()) -}
+cc219dae634bb9fae2020b81ab1140fe
+  $tc'Blocked :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1675475340849358797##
+                   4548433335754002915##
+                   Task5.$trModule
+                   Task5.$tc'Blocked1) -}
+a00f40190a170ea51feb3f95d8452415
+  $tc'Blocked1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Blocked"#) -}
+803d0f2b223fe5beae71db8a85aa6614
+  $tc'Done :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2176896577034294850##
+                   6727498484905989500##
+                   Task5.$trModule
+                   Task5.$tc'Done1) -}
+c1b3ad43c37f066bde92643a24da25d3
+  $tc'Done1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Done"#) -}
+14f42259e1f02a1b74e7b2d26d5eda1f
+  $tc'Empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14787454611251508982##
+                   957365757652992436##
+                   Task5.$trModule
+                   Task5.$tc'Empty1) -}
+9ab122ece23a9fda10107611eb393e31
+  $tc'Empty1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Empty"#) -}
+d07631c234a3244b3e570f6ff31281e3
+  $tc'Fork :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   197396946066100888##
+                   2300561741600668581##
+                   Task5.$trModule
+                   Task5.$tc'Fork1) -}
+6e2380e8362ef979631be1f8b8c9b45c
+  $tc'Fork1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Fork"#) -}
+4f8021ec5867f10f1e1746b00467dff1
+  $tc'ForkF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12113225723405990902##
+                   10084420983223020712##
+                   Task5.$trModule
+                   Task5.$tc'ForkF1) -}
+942b9f25846367265028a7c19079c81a
+  $tc'ForkF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ForkF"#) -}
+990ed361f11c5f6b2dcfa0fbbacb452c
+  $tc'Full :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14311763372459876759##
+                   17199872410991766263##
+                   Task5.$trModule
+                   Task5.$tc'Full1) -}
+72a870d64127c5504baa6f0c8622385e
+  $tc'Full1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Full"#) -}
+d2f5744e76d71712fa388f3316e006ee
+  $tc'Get :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8628104451752433331##
+                   9028636790130777393##
+                   Task5.$trModule
+                   Task5.$tc'Get1) -}
+964b8bcac5ab2786efb0a897a9032309
+  $tc'Get1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Get"#) -}
+c51196f9b83b0cceb6b82b96f8438ee9
+  $tc'GetF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1175582422874107801##
+                   15441129976047957431##
+                   Task5.$trModule
+                   Task5.$tc'GetF1) -}
+7c401d839b2c1614d676556796c0d8ef
+  $tc'GetF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'GetF"#) -}
+2bfb7c149285d980bd393bc5f00b5f4a
+  $tc'IVar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16283635652205233652##
+                   16519963740517872167##
+                   Task5.$trModule
+                   Task5.$tc'IVar1) -}
+d962c858c655c0efeefb3d98cafb4d6f
+  $tc'IVar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'IVar"#) -}
+7367efdd0fac790c7f3ac80406161742
+  $tc'LiftIO :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16742360270178280475##
+                   12488221271809896197##
+                   Task5.$trModule
+                   Task5.$tc'LiftIO1) -}
+cb4b071d0b530614851a2802e2b7e182
+  $tc'LiftIO1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'LiftIO"#) -}
+71d9682688b972da58dbc5314b5142ef
+  $tc'LiftIOF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12512652683745472223##
+                   17541908863935628816##
+                   Task5.$trModule
+                   Task5.$tc'LiftIOF1) -}
+6797b1cb16cc059a1b5710a39f983b4b
+  $tc'LiftIOF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'LiftIOF"#) -}
+0a1b29ad603312ed53372b15d33f08b6
+  $tc'New :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6654155575272190784##
+                   1694902348673227953##
+                   Task5.$trModule
+                   Task5.$tc'New1) -}
+3a08936163141bdeeb27fba6826d6f9c
+  $tc'New1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'New"#) -}
+bf940dc478873558024e1d934daaf245
+  $tc'NewF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12406891502686988381##
+                   4187645024123260056##
+                   Task5.$trModule
+                   Task5.$tc'NewF1) -}
+dec1913c87dd49757f702ca50cc5eaa5
+  $tc'NewF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NewF"#) -}
+dc4deb8efc0953bf028cc9608a2adf7b
+  $tc'Par :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11941074252281893712##
+                   1054651894443238765##
+                   Task5.$trModule
+                   Task5.$tc'Par1) -}
+0e85152e12f7a2e76333750087ac733c
+  $tc'Par1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Par"#) -}
+9b825f30888736aca2d7bf2bcda67a33
+  $tc'Put :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2158894713154714939##
+                   15242308575564648363##
+                   Task5.$trModule
+                   Task5.$tc'Put1) -}
+37cb87679bf12afd78665b7f2ab06e5d
+  $tc'Put1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Put"#) -}
+e99cb8f4bf4886a89f23b33eea9309b4
+  $tc'PutF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14160996137824551141##
+                   2529854565525758409##
+                   Task5.$trModule
+                   Task5.$tc'PutF1) -}
+23a97d9e438aafdc46b8e19f45669c43
+  $tc'PutF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'PutF"#) -}
+89a7486cd442b584405c3455d185d7f3
+  $tc'Return :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   189191645653763279##
+                   6149109994042906037##
+                   Task5.$trModule
+                   Task5.$tc'Return1) -}
+80fb4c857d14e4efa77af8a39b66b0c4
+  $tc'Return1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Return"#) -}
+b54c4c7947eb35b4859fc85298b27d5a
+  $tc'Wrap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10252804790611391833##
+                   13596192930876092558##
+                   Task5.$trModule
+                   Task5.$tc'Wrap1) -}
+78a81b730d2241001c8c2de03de4d74f
+  $tc'Wrap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Wrap"#) -}
+4ae5c3990d0c0654adf85a20224a22f8
+  $tc'Yield :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1463420374120027951##
+                   12193944281273114202##
+                   Task5.$trModule
+                   Task5.$tc'Yield1) -}
+c79c16056cad179d0e7e003feb59ef80
+  $tc'Yield1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Yield"#) -}
+2359fd2cd428de454910c7664847e9e3
+  $tc'YieldF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3729167196722098204##
+                   8482355923224887112##
+                   Task5.$trModule
+                   Task5.$tc'YieldF1) -}
+6af3891eb704d7a0237cb620b11a28ed
+  $tc'YieldF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'YieldF"#) -}
+69215a74909092171feca0f68cc133a2
+  $tcFree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3411078315166422789##
+                   12747062971001154079##
+                   Task5.$trModule
+                   Task5.$tcFree1) -}
+6a1f58940b019f3d78576f30f77a8324
+  $tcFree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Free"#) -}
+0ed6ee790bb279a2af0c9ec357e5163b
+  $tcIVar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15735674461369517703##
+                   10932825340124041886##
+                   Task5.$trModule
+                   Task5.$tcIVar1) -}
+de5aa65669fdc776a3141a5ec9c680f0
+  $tcIVar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IVar"#) -}
+7b841145b9ac3b61c11aa0c53ad8b644
+  $tcIVarContents :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15089120912384832566##
+                   1544103684050808908##
+                   Task5.$trModule
+                   Task5.$tcIVarContents1) -}
+2c86c4853093701fb07c3437490520b1
+  $tcIVarContents1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IVarContents"#) -}
+eead0f7b597232cc674fd2274bf452ce
+  $tcPar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16717579361918845231##
+                   154898091603862915##
+                   Task5.$trModule
+                   Task5.$tcPar1) -}
+3700c08badaae66c5bc6bd80066b64c4
+  $tcPar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Par"#) -}
+850fcabbdb86e902c418346ed405a015
+  $tcTrace :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10012651469185788113##
+                   7485833408748407776##
+                   Task5.$trModule
+                   Task5.$tcTrace1) -}
+9028bcc6565417e4efe8d82c086ac438
+  $tcTrace1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Trace"#) -}
+1b33e2f2cbb41a83a98da2c80d342f1c
+  $tcTraceF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7303894941304909585##
+                   10281270168491320763##
+                   Task5.$trModule
+                   Task5.$tcTraceF1) -}
+4199980dff47eb04bbb3cdfe0c669d71
+  $tcTraceF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TraceF"#) -}
+5478248beade0a68ab2708e256e79634
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task5.$trModule2 Task5.$trModule1) -}
+6ece98247ad7e41e407ab47a1417ed7b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task5"#) -}
+35db3147e4935474536d6942126894f2
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w6-0.1.0.0-W9Ugrx6kTHIl3x6l8azM"#) -}
+ea33aeabb26d1f1d643b91ee7409565a
+  $wlvl :: GHC.Base.String -> Task5.Free f a
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+ea33aeabb26d1f1d643b91ee7409565a
+  type role Free nominal nominal
+  data Free (f :: * -> *) a = Return a | Wrap (f (Task5.Free f a))
+44070ef754ec62154673a1bbeef2c40d
+  newtype IVar a = IVar (GHC.IORef.IORef (Task5.IVarContents a))
+44070ef754ec62154673a1bbeef2c40d
+  data IVarContents a = Full a | Empty | Blocked [a -> Task5.Trace]
+fd0b85088cacb35a9a514b34d37f2cdf
+  newtype Par a = Par {runCont :: (a -> Task5.Trace) -> Task5.Trace}
+44070ef754ec62154673a1bbeef2c40d
+  data Trace where
+    Get :: (Task5.IVar a) -> (a -> Task5.Trace) -> Trace
+    Put :: (Task5.IVar a) -> a -> Task5.Trace -> Trace
+    New :: (Task5.IVarContents a) -> (Task5.IVar a -> Task5.Trace)
+           -> Trace
+    Fork :: Task5.Trace -> Task5.Trace -> Trace
+    Done :: Trace
+    Yield :: Task5.Trace -> Trace
+    LiftIO :: (GHC.Types.IO a) -> (a -> Task5.Trace) -> Trace
+0d756050d556d68b876a5435ead5344b
+  type Trace' = Task5.Free Task5.TraceF :: * -> *
+dff6d22e4a3ee592bd3af439f55f4d5e
+  data TraceF b where
+    GetF :: (Task5.IVar a) -> (a -> b) -> TraceF b
+    PutF :: (Task5.IVar a) -> a -> b -> TraceF b
+    NewF :: (Task5.IVarContents a) -> (Task5.IVar a -> b) -> TraceF b
+    ForkF :: b -> b -> TraceF b
+    YieldF :: b -> TraceF b
+    LiftIOF :: (GHC.Types.IO a) -> (a -> b) -> TraceF b
+7496d196823e98300f25905b997fc7bf
+  fromTraceF :: Task5.Free Task5.TraceF () -> Task5.Trace
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+54540c9dfa34d453e676ea4977998a19
+  runCont :: Task5.Par a -> (a -> Task5.Trace) -> Task5.Trace
+  RecSel Left Task5.Par
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Task5.runCont1
+                  `cast`
+                (forall (a :: <*>_N). <Task5.Par a>_R ->_R Task5.N:Par[0] <a>_R) -}
+b795fb6225b7568b0445d73f5cf31d54
+  runCont1 :: Task5.Par a -> Task5.Par a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Task5.Par a) -> ds) -}
+2859e2766128ab727d30de789119a934
+  toTraceF :: Task5.Trace -> Task5.Free Task5.TraceF ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+instance [safe] GHC.Base.Applicative [Task5.Free]
+  = Task5.$fApplicativeFree
+instance [safe] GHC.Base.Applicative [Task5.Par]
+  = Task5.$fApplicativePar
+instance [safe] GHC.Classes.Eq [Task5.IVar] = Task5.$fEqIVar
+instance [safe] GHC.Base.Functor [Task5.Free] = Task5.$fFunctorFree
+instance [safe] GHC.Base.Functor [Task5.Par] = Task5.$fFunctorPar
+instance [safe] GHC.Base.Monad [Task5.Free] = Task5.$fMonadFree
+instance [safe] GHC.Base.Monad [Task5.Par] = Task5.$fMonadPar
+instance [safe] Control.DeepSeq.NFData [Task5.IVar]
+  = Task5.$fNFDataIVar
+"SPEC/Task5 $dmfail @ Par" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                         Task5.Par)
+  GHC.Base.$dmfail @ Task5.Par $dMonad = Task5.$fMonadPar_$s$dmfail
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

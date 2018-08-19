@@ -1,0 +1,13 @@
+Configuring base58-bytestring-0.1.0...
+Building base58-bytestring-0.1.0...
+Preprocessing library base58-bytestring-0.1.0...
+[1 of 2] Compiling Data.ByteString.Base58.Internal ( src/Data/ByteString/Base58/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Data/ByteString/Base58/Internal.o )
+[2 of 2] Compiling Data.ByteString.Base58 ( src/Data/ByteString/Base58.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Data/ByteString/Base58.o )
+
+src/Data/ByteString/Base58.hs:15:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+Installing library in
+/home/tom/Desktop/haskell/w4/src/w4/.stack-work/install/x86_64-linux/lts-9.1/8.0.2/lib/x86_64-linux-ghc-8.0.2/base58-bytestring-0.1.0-29mjjeTHKSGSjQbSNgiSx
+Registering base58-bytestring-0.1.0...

@@ -1,0 +1,864 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-27 16:39:09.965728 UTC
+
+interface w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W:Task2 [family instance module] 8002
+  interface hash: 3d52e544d4ab55d5a3a15b7048b96d41
+  ABI hash: cd46b15d848074766212a5ac6d9015fb
+  export-list hash: 1485125bb356591f9c625df756d55b10
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 937ef6b8624e64106bbd92a8cb3b4bef
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task2.build
+  Task2.build'
+  Task2.choose
+  Task2.findmaxInd
+  Task2.findmaxInd'
+  Task2.index
+  Task2.index'
+  Task2.insert'
+  Task2.insertInPerfect
+  Task2.log2
+  Task2.log2'
+  Task2.reverse
+  Task2.reverse'
+  Task2.sample0
+  Task2.sample1
+  Task2.sample2
+  Task2.sample3
+  Task2.testPer
+  Task2.testPer1
+  Task2.testPer2
+  Task2.testPer3
+  Task2.toBin
+  Task2.toBinZ
+  Task2.Perfect{Task2.S Task2.Z}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Float 33e2b9ffe427edd6a5c2fd6a3b26703c
+import  -/  base-4.9.1.0:GHC.Generics 1dbec2bc7dd1c5bd8c89ed857eaed19b
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+e102c5b9d9ffa9b3890c476579e6b662
+  $fGenericPerfect :: GHC.Generics.Generic (Task2.Perfect a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Task2.Perfect a)
+                  (Task2.$fGenericPerfect_$cfrom @ a)
+                  (Task2.$fGenericPerfect_$cto @ a) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fGenericPerfect1 ::
+    Task2.Perfect a
+    -> (GHC.Generics.:+:)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons "Z" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            (GHC.Generics.M1
+               GHC.Generics.S
+               ('GHC.Generics.MetaSel
+                  'GHC.Base.Nothing
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.K1 GHC.Generics.R a)))
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons "S" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            (GHC.Generics.M1
+               GHC.Generics.S
+               ('GHC.Generics.MetaSel
+                  'GHC.Base.Nothing
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.K1 GHC.Generics.R (Task2.Perfect (a, a)))))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ x (x1 :: Task2.Perfect a) ->
+                 case x1 of wild {
+                   Task2.Z g1
+                   -> GHC.Generics.L1
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons "Z" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R a)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons "S" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R (Task2.Perfect (a, a)))))
+                        @ x
+                        g1
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <a>_R <x>_P))
+                             (Trans
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               'GHC.Base.Nothing
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1 GHC.Generics.R a>_R))
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "Z" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  'GHC.Base.Nothing
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R a)>_R)) <x>_N))
+                   Task2.S g1
+                   -> GHC.Generics.R1
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons "Z" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R a)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons "S" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R (Task2.Perfect (a, a)))))
+                        @ x
+                        g1
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Generics.N:K1[0]
+                                       <GHC.Generics.R>_P <Task2.Perfect (a, a)>_R <x>_P))
+                             (Trans
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               'GHC.Base.Nothing
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1
+                                               GHC.Generics.R (Task2.Perfect (a, a))>_R))
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "S" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  'GHC.Base.Nothing
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R
+                                                  (Task2.Perfect (a, a)))>_R)) <x>_N)) }) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fGenericPerfect_$cfrom ::
+    Task2.Perfect a -> GHC.Generics.Rep (Task2.Perfect a) x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Task2.$fGenericPerfect1
+                  `cast`
+                (forall (a :: <*>_N) (x :: <GHC.Types.*>_N).
+                 <Task2.Perfect a>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "Perfect"
+                                       "Task2"
+                                       "w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W"
+                                       'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "Z" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                       (GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             'GHC.Base.Nothing
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R a))
+                                     GHC.Generics.:+: GHC.Generics.M1
+                                                        GHC.Generics.C
+                                                        ('GHC.Generics.MetaCons
+                                                           "S"
+                                                           'GHC.Generics.PrefixI
+                                                           'GHC.Types.False)
+                                                        (GHC.Generics.M1
+                                                           GHC.Generics.S
+                                                           ('GHC.Generics.MetaSel
+                                                              'GHC.Base.Nothing
+                                                              'GHC.Generics.NoSourceUnpackedness
+                                                              'GHC.Generics.NoSourceStrictness
+                                                              'GHC.Generics.DecidedLazy)
+                                                           (GHC.Generics.K1
+                                                              GHC.Generics.R
+                                                              (Task2.Perfect (a, a))))>_R))
+                          (Sub (Sym (Task2.Rep_Perfect[0] <a>_N))) <x>_N) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fGenericPerfect_$cto ::
+    GHC.Generics.Rep (Task2.Perfect a) x -> Task2.Perfect a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ x (ds :: GHC.Generics.Rep (Task2.Perfect a) x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Task2.Rep_Perfect[0] <a>_N))
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.D>_P
+                                <'GHC.Generics.MetaData
+                                   "Perfect"
+                                   "Task2"
+                                   "w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W"
+                                   'GHC.Types.False>_P
+                                <GHC.Generics.M1
+                                   GHC.Generics.C
+                                   ('GHC.Generics.MetaCons
+                                      "Z" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                   (GHC.Generics.M1
+                                      GHC.Generics.S
+                                      ('GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy)
+                                      (GHC.Generics.K1 GHC.Generics.R a))
+                                 GHC.Generics.:+: GHC.Generics.M1
+                                                    GHC.Generics.C
+                                                    ('GHC.Generics.MetaCons
+                                                       "S" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                                    (GHC.Generics.M1
+                                                       GHC.Generics.S
+                                                       ('GHC.Generics.MetaSel
+                                                          'GHC.Base.Nothing
+                                                          'GHC.Generics.NoSourceUnpackedness
+                                                          'GHC.Generics.NoSourceStrictness
+                                                          'GHC.Generics.DecidedLazy)
+                                                       (GHC.Generics.K1
+                                                          GHC.Generics.R
+                                                          (Task2.Perfect
+                                                             (a, a))))>_R) <x>_N) of wild {
+                   GHC.Generics.L1 ds1
+                   -> Task2.Z
+                        @ a
+                        ds1
+                          `cast`
+                        (Trans
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.C>_P
+                                       <'GHC.Generics.MetaCons
+                                          "Z" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                       <GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             'GHC.Base.Nothing
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R a)>_R)
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1 GHC.Generics.R a>_R) <x>_N)
+                             (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <a>_R <x>_P))
+                   GHC.Generics.R1 ds1
+                   -> Task2.S
+                        @ a
+                        ds1
+                          `cast`
+                        (Trans
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.C>_P
+                                       <'GHC.Generics.MetaCons
+                                          "S" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                       <GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             'GHC.Base.Nothing
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1
+                                             GHC.Generics.R (Task2.Perfect (a, a)))>_R)
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1
+                                          GHC.Generics.R (Task2.Perfect (a, a))>_R) <x>_N)
+                             (GHC.Generics.N:K1[0]
+                                  <GHC.Generics.R>_P <Task2.Perfect (a, a)>_R <x>_P)) }) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fShowPerfect :: GHC.Show.Show a => GHC.Show.Show (Task2.Perfect a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Task2.Perfect a)
+                  (Task2.$fShowPerfect_$cshowsPrec @ a $dShow)
+                  (Task2.$fShowPerfect_$cshow @ a $dShow)
+                  (Task2.$fShowPerfect_$cshowList @ a $dShow) -}
+8f02751235195b4c3933e1f90df8c88a
+  $fShowPerfect1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fShowPerfect_$cshow ::
+    GHC.Show.Show a => Task2.Perfect a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Task2.Perfect a) ->
+                 Task2.$fShowPerfect_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fShowPerfect_$cshowList ::
+    GHC.Show.Show a => [Task2.Perfect a] -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) ->
+                 GHC.Show.showList__
+                   @ (Task2.Perfect a)
+                   (Task2.$fShowPerfect_$cshowsPrec
+                      @ a
+                      $dShow
+                      Task2.$fShowPerfect1)) -}
+e102c5b9d9ffa9b3890c476579e6b662
+  $fShowPerfect_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> Task2.Perfect a -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)> -}
+e523f51eb48fd8d3c904323835b18962
+  $tc'S :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7713745555245784537##
+                   9318455535482612124##
+                   Task2.$trModule
+                   Task2.$tc'S1) -}
+13a823f9f7728eaca4b5bafbfd2cd7a9
+  $tc'S1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'S"#) -}
+8302721f14c4a9c1cf0a22a5f09f4366
+  $tc'Z :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1090401258802057022##
+                   7999906588174322544##
+                   Task2.$trModule
+                   Task2.$tc'Z1) -}
+87e9d89f26a50e99bdfe3b27088a0fc5
+  $tc'Z1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Z"#) -}
+69ae5b6e7d6470286732364ad07a5728
+  $tcPerfect :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7340157961211768154##
+                   1016403316877124949##
+                   Task2.$trModule
+                   Task2.$tcPerfect1) -}
+f81b1ddcbac4fb1034e9ffd146cb1e40
+  $tcPerfect1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Perfect"#) -}
+346fe218f97454890b50225826da4668
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task2.$trModule2 Task2.$trModule1) -}
+63a1daf228320cee6b9a284728d62600
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task2"#) -}
+74a4290ce687bbe7b9aacff4b32d69cb
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W"#) -}
+0898488e28734b8cd976770efc3bc4f9
+  $wbuild :: GHC.Prim.Int# -> [a] -> Task2.Perfect a
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a (ww :: GHC.Prim.Int#) (w :: [a]) ->
+                 case GHC.List.$wlenAcc @ a w 0# of ww2 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww 0#) of wild1 {
+                   GHC.Types.False
+                   -> let {
+                        $j :: GHC.Prim.Int# -> Task2.Perfect a
+                          {- Arity: 1, Strictness: <S,U> -}
+                        = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# ww2 y) of wild {
+                            GHC.Types.False
+                            -> let {
+                                 per :: Task2.Perfect a
+                                 = Task2.$wbuild' @ a @ a ww w (GHC.List.head @ a)
+                               } in
+                               Task2.$winsertInPerfect
+                                 @ a
+                                 per
+                                 w
+                                 0#
+                                 (Task2.findmaxInd' @ a (Task2.choose @ a) per)
+                                 ww
+                            GHC.Types.True -> Task2.build1 @ a }
+                      } in
+                      case ww of wild2 {
+                        DEFAULT -> case GHC.Real.$wf1 2# wild2 of ww4 { DEFAULT -> $j ww4 }
+                        0# -> $j 1# }
+                   GHC.Types.True
+                   -> case GHC.Real.^2 ret_ty (Task2.Perfect a) of {} } }) -}
+8e89c5d89d09a327e1ff7acdb6c27868
+  $wbuild' :: GHC.Prim.Int# -> [a] -> ([a] -> b) -> Task2.Perfect b
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U><L,C(U)>,
+     Inline: [0] -}
+5df079d5a98f62c57d09c41befe97ea6
+  $windex :: Task2.Perfect a -> GHC.Prim.Int# -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a (w :: Task2.Perfect a) (ww :: GHC.Prim.Int#) ->
+                 case Task2.findmaxInd'
+                        @ a
+                        (Task2.choose @ a)
+                        w of wild { GHC.Types.I# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww (GHC.Prim.-# x 1#)) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# ww 0#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.Base.Just
+                             @ a
+                             (Task2.index'
+                                @ a
+                                @ a
+                                w
+                                (Task2.$wtoBin
+                                   ww
+                                   (case Task2.$wtoBinZ x of ww1 { (#,#) ww2 ww3 ->
+                                    GHC.Types.: @ GHC.Types.Int ww2 ww3 }))
+                                (GHC.Base.id @ a))
+                        GHC.Types.True -> GHC.Base.Nothing @ a }
+                   GHC.Types.True -> GHC.Base.Nothing @ a } }) -}
+fca7754f62d559f29d8773bcb700b75d
+  $winsertInPerfect ::
+    Task2.Perfect a
+    -> [a]
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> Task2.Perfect a
+  {- Arity: 5, Strictness: <S,1*U><L,U><S,U><L,U(U)><S,U>,
+     Inline: [0] -}
+f9c152bb0239f4540d5a1c0e50e4762f
+  $wtoBin :: GHC.Prim.Int# -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+d38b100a9ab7ff7cd7e2e4617df3f20f
+  $wtoBinZ :: GHC.Prim.Int# -> (# GHC.Types.Int, [GHC.Types.Int] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+e102c5b9d9ffa9b3890c476579e6b662
+  data Perfect a = Z a | S (Task2.Perfect (a, a))
+e102c5b9d9ffa9b3890c476579e6b662
+  axiom Rep_Perfect::
+    [a]
+      GHC.Generics.Rep (Task2.Perfect a)
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "Perfect"
+               "Task2"
+               "w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons "Z" 'GHC.Generics.PrefixI 'GHC.Types.False)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     'GHC.Base.Nothing
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 a))
+             GHC.Generics.:+: GHC.Generics.C1
+                                ('GHC.Generics.MetaCons "S" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                (GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 (Task2.Perfect (a, a)))))
+e8a44358fe2246697e032428a432959e
+  build :: GHC.Types.Int -> [a] -> Task2.Perfect a
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Types.Int) (w1 :: [a]) ->
+                 case w of ww { GHC.Types.I# ww1 -> Task2.$wbuild @ a ww1 w1 }) -}
+f41a7aa2b964abc970513a9b3c7ed746
+  build' :: GHC.Types.Int -> [a] -> ([a] -> b) -> Task2.Perfect b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><L,U><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a @ b (w :: GHC.Types.Int) (w1 :: [a]) (w2 :: [a] -> b) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Task2.$wbuild' @ a @ b ww1 w1 w2 }) -}
+aa5d4d5c7d5a5b73526f508f92a314d1
+  build1 :: Task2.Perfect a
+  {- Strictness: x -}
+bd481975dd392cc6c6b390cf6b92d7a4
+  choose :: a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: a) -> Task2.choose1) -}
+76512786aaf9f4b2dbfd20f08cabe62e
+  choose1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+b9dde2491ec8c608b3eb7560e6d588b7
+  findmaxInd :: Task2.Perfect a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a -> Task2.findmaxInd' @ a (Task2.choose @ a)) -}
+320ee5a98c832ad38f027fddc68882d2
+  findmaxInd' ::
+    (a -> GHC.Types.Int) -> Task2.Perfect a -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U(U))><S,1*U> -}
+801e51bd7999655d7ad1c5b0ae28fa3b
+  index :: Task2.Perfect a -> GHC.Types.Int -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <S,U><S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Task2.Perfect a) (w1 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 -> Task2.$windex @ a w ww1 }) -}
+ad655396cae0e302c9f6585d27bcd830
+  index' :: Task2.Perfect a -> [GHC.Types.Int] -> (a -> b) -> b
+  {- Arity: 3, Strictness: <S,1*U><L,U><C(S),1*C1(U)> -}
+6f9f8c94ffcc2c8bbeffb72140ae8427
+  insert' ::
+    Task2.Perfect a
+    -> a
+    -> GHC.Types.Int
+    -> [GHC.Types.Int]
+    -> (a -> a)
+    -> Task2.Perfect a
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,U(U)><L,U><L,C(U)> -}
+9bb26f1b2398e99062a7c10b6714c6bb
+  insertInPerfect ::
+    Task2.Perfect a
+    -> [a]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Task2.Perfect a
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><S(S),1*U(U)><L,U(U)><S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   (w :: Task2.Perfect a)
+                   (w1 :: [a])
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: GHC.Types.Int) ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 case w4 of ww2 { GHC.Types.I# ww3 ->
+                 Task2.$winsertInPerfect @ a w w1 ww1 w3 ww3 } }) -}
+bb93f9375a62b70051c466d094042341
+  log2 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Int) ->
+                 case x of wild { GHC.Types.I# i ->
+                 case GHC.Prim.logDouble#
+                        (GHC.Prim.int2Double# i) of wild2 { DEFAULT ->
+                 case GHC.Prim.logDouble# 2.0## of wild3 { DEFAULT ->
+                 case GHC.Prim./## wild2 wild3 of wild4 { DEFAULT ->
+                 let {
+                   n :: GHC.Prim.Int# = GHC.Prim.double2Int# wild4
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<## (GHC.Prim.int2Double# n) wild4) of wild1 {
+                   GHC.Types.False -> GHC.Types.I# n
+                   GHC.Types.True -> GHC.Types.I# (GHC.Prim.+# n 1#) } } } } }) -}
+7ffaa4734c223f0f330c720198ad778e
+  log2' :: GHC.Types.Double -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.logDouble# x1 of wild2 { DEFAULT ->
+                 case GHC.Prim.logDouble# 2.0## of wild3 { DEFAULT ->
+                 case GHC.Prim./## wild2 wild3 of wild4 { DEFAULT ->
+                 let {
+                   n :: GHC.Prim.Int# = GHC.Prim.double2Int# wild4
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<## (GHC.Prim.int2Double# n) wild4) of wild1 {
+                   GHC.Types.False -> GHC.Types.I# n
+                   GHC.Types.True -> GHC.Types.I# (GHC.Prim.+# n 1#) } } } } }) -}
+78a25eb693bfecfbe9e2f300e8f9ac63
+  reverse :: Task2.Perfect a -> Task2.Perfect a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: Task2.Perfect a) ->
+                 Task2.reverse' @ a x (GHC.Base.id @ a)) -}
+ac1cc18e4107cdbfa56a65d6ac509d3b
+  reverse' :: Task2.Perfect a -> (a -> a) -> Task2.Perfect a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,C(U)> -}
+d7708188b39ecb3206c528b241e9c642
+  sample0 :: Task2.Perfect GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Task2.Z @ GHC.Types.Int Task2.$fShowPerfect1) -}
+4edc458d61767f3432fffe7e4fad2d37
+  sample1 :: Task2.Perfect GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task2.S @ GHC.Types.Int Task2.sample4) -}
+d9752b40b42acc910802bfe00194e556
+  sample10 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.sample12, Task2.sample11)) -}
+a9ac9f5579ddc9c2dd3ca44af837ed65
+  sample11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+6c6023ebae15e95cc3acefd0f417de03
+  sample12 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+05893257e065ab80f1956d2acafc55ef
+  sample13 :: Task2.Perfect (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task2.S
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Task2.sample14) -}
+4bf13a04fa9a4f8d967849272cee3d34
+  sample14 ::
+    Task2.Perfect
+      ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int))
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task2.S
+                   @ ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int))
+                   Task2.sample15) -}
+53e895271794052e23edca109351e421
+  sample15 ::
+    Task2.Perfect
+      (((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int)),
+       ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int)))
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Task2.Z
+                   @ (((GHC.Types.Int, GHC.Types.Int),
+                       (GHC.Types.Int, GHC.Types.Int)),
+                      ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int)))
+                   Task2.sample16) -}
+b8c8c543f3f6554f35ebdf80929cc713
+  sample16 ::
+    (((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int)),
+     ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int)))
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.sample9, Task2.sample17)) -}
+05a7c8a85ae3c7eb3cee6b43256b8ac0
+  sample17 ::
+    ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int))
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.sample21, Task2.sample18)) -}
+0a43ca9a8da47b0ebff05e4d26330bd6
+  sample18 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.sample20, Task2.sample19)) -}
+c81e04660f289f5e68c9ee14125b15cd
+  sample19 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 8#) -}
+7dfea6b2cb495d2ba82defd68d508329
+  sample2 :: Task2.Perfect GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task2.S @ GHC.Types.Int Task2.sample7) -}
+9fc63227c8b304a9b4ff19233560f667
+  sample20 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 7#) -}
+9be467b59e7115bbbf34fb15d51e4b47
+  sample21 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.sample23, Task2.sample22)) -}
+738e4a32b63eab7c7d19f23be6f6f9f5
+  sample22 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+9c7b651533c7e44144df74edf86caf73
+  sample23 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+bc1716e003ef5484e4369b545b52d3c6
+  sample3 :: Task2.Perfect GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task2.S @ GHC.Types.Int Task2.sample13) -}
+8907452a8d3e35d6abb960a5b3fe2a0d
+  sample4 :: Task2.Perfect (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Task2.Z
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Task2.sample5) -}
+fb033cca3be0cd278f4ea2a0592a7655
+  sample5 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.choose1, Task2.sample6)) -}
+8263a3e8908490d6bd3390eb8c7a0649
+  sample6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+2415309f6340aaebb035ec876b916d6d
+  sample7 :: Task2.Perfect (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Task2.S
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Task2.sample8) -}
+95d36fcb9484798bb47978841277443e
+  sample8 ::
+    Task2.Perfect
+      ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int))
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Task2.Z
+                   @ ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int))
+                   Task2.sample9) -}
+6c9f5e7e530a173559f7b0895b4051ef
+  sample9 ::
+    ((GHC.Types.Int, GHC.Types.Int), (GHC.Types.Int, GHC.Types.Int))
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Task2.sample5, Task2.sample10)) -}
+820f3f80cc51c75b44bdf9cc8143f3e0
+  testPer :: Task2.Perfect GHC.Types.Int
+  {- Unfolding: (Task2.$wbuild @ GHC.Types.Int 10# Task2.testPer4) -}
+f9f454e4e0315df648bb7467b26fe070
+  testPer1 :: Task2.Perfect GHC.Types.Int
+  {- Unfolding: (Task2.$wbuild @ GHC.Types.Int 8# Task2.testPer5) -}
+19221af64efc14c10cb52d654428e6da
+  testPer10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "str3"#) -}
+2f69cd6488085359e47761bbde49fb59
+  testPer11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "str2"#) -}
+aa971225dbed5f997342f9eec21e04c4
+  testPer12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "str1"#) -}
+641448f739c7839834b0e2e11355c702
+  testPer2 :: Task2.Perfect GHC.Types.Char
+  {- Unfolding: (Task2.$wbuild @ GHC.Types.Char 3# Task2.testPer6) -}
+3d04415255b3863b026d5e914e67d0dd
+  testPer3 :: Task2.Perfect GHC.Base.String
+  {- Unfolding: (Task2.$wbuild
+                   @ [GHC.Types.Char]
+                   2#
+                   Task2.testPer7) -}
+afeef17af4818e95136cebca5ac756f2
+  testPer4 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 1# 1025#) -}
+85622701d7b6d0e4a2b322f434554ec1
+  testPer5 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 1# 10000#) -}
+9f048d9b912d33cbe425e8d4351002b7
+  testPer6 :: GHC.Base.String
+  {- Unfolding: (GHC.Enum.eftChar 97# 122#) -}
+8603a5120dbac6e11c668b986ca97b30
+  testPer7 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Task2.testPer12
+                   Task2.testPer8) -}
+26903cec9bea5223332e20116b3cd69e
+  testPer8 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Task2.testPer11
+                   Task2.testPer9) -}
+8fa41637f0a416fa9338ebb1bf32930a
+  testPer9 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Task2.testPer10
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+9f79e97854e091216708b62aa376bf82
+  toBin :: GHC.Types.Int -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2, Strictness: <S(S),1*U(1*U)><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: [GHC.Types.Int]) ->
+                 case w of ww { GHC.Types.I# ww1 -> Task2.$wtoBin ww1 w1 }) -}
+a69840d8356acd9c57a5366e99a293cb
+  toBinZ :: GHC.Types.Int -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Task2.$wtoBinZ ww1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Int ww3 ww4 } }) -}
+instance [safe] GHC.Generics.Generic [Task2.Perfect]
+  = Task2.$fGenericPerfect
+instance [safe] GHC.Show.Show [Task2.Perfect] = Task2.$fShowPerfect
+family instance GHC.Generics.Rep [Task2.Perfect]
+  = Task2.Rep_Perfect
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,466 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-27 12:20:02.647314 UTC
+
+interface w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W:Task4 8002
+  interface hash: 04843585907dd6dc453e40ed5509b9be
+  ABI hash: 3dd57a5daa8c0e80d2079eb8b5c4eaf7
+  export-list hash: 2906df53757036cd7710090d8e72b89a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Task4.charlist
+  Task4.check
+  Task4.checkHash
+  Task4.ex
+  Task4.ex1
+  Task4.ex2
+  Task4.ex3
+  Task4.ex4
+  Task4.ex5
+  Task4.fromBase58
+  Task4.fromHex
+  Task4.input
+  Task4.output
+  Task4.sha256
+  Task4.test
+  Task4.test2
+  Task4.toBase58
+  Task4.toHex
+  Task4.validator
+  Task4.walletDec
+  Task4.walletEnc
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      base16-bytestring-0.1.1.6@base16-bytestring-0.1.1.6-4E2p94lTx8gIceMhu8Kl9o
+                      base58-bytestring-0.1.0@base58-bytestring-0.1.0-29mjjeTHKSGSjQbSNgiSx
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      cryptonite-0.23@cryptonite-0.23-EXqej153fRK6r6DVzkvS8x
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      memory-0.14.6@memory-0.14.6-Aar7hKewN999MXzU9kvt2a
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Collection.Collection
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         base58-bytestring-0.1.0@base58-bytestring-0.1.0-29mjjeTHKSGSjQbSNgiSx:Data.ByteString.Base58.Internal
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Array.Bitmap
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Array.Boxed
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Boot.Builder
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Collection.Buildable
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Collection.Collection
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Collection.Element
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Collection.Keyed
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Collection.Mutable
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Monad.Exception
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Numerical.Subtractive
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Primitive.Block.Base
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Primitive.Monad
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Primitive.Types.OffsetSize
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Primitive.UArray.Base
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Primitive.UTF8.Base
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.String.Encoding.ASCII7
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.String.Encoding.ISO_8859_1
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.String.Encoding.UTF16
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.String.Encoding.UTF32
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.String.UTF8
+                         foundation-0.0.13@foundation-0.0.13-G4GHWkMwmXnF7HKMtT8vGa:Foundation.Tuple
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.Tuple 7dc4bbb45d2e69c991ffac438beeca11
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base16-bytestring-0.1.1.6@base16-bytestring-0.1.1.6-4E2p94lTx8gIceMhu8Kl9o:Data.ByteString.Base16 04e2b0204faccd7b3af0f49c3adff2b8
+import  -/  base58-bytestring-0.1.0@base58-bytestring-0.1.0-29mjjeTHKSGSjQbSNgiSx:Data.ByteString.Base58 a600ed67c60901498ba7feff1ca7e9a6
+import  -/  base58-bytestring-0.1.0@base58-bytestring-0.1.0-29mjjeTHKSGSjQbSNgiSx:Data.ByteString.Base58.Internal a04aa1e51e4fe545283ba443ef95b5f1
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Char8 64661030f691dd1495e363eeda7a5344
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Internal 89cda42ec946d9d6577dd41ab95d523e
+import  -/  cryptonite-0.23@cryptonite-0.23-EXqej153fRK6r6DVzkvS8x:Crypto.Hash dd9f9a77a58871971b0b40557af2b696
+import  -/  cryptonite-0.23@cryptonite-0.23-EXqej153fRK6r6DVzkvS8x:Crypto.Hash.SHA256 c1035426a1e9361b03d28f97497c712b
+import  -/  cryptonite-0.23@cryptonite-0.23-EXqej153fRK6r6DVzkvS8x:Crypto.Hash.Types 641b675a81dfcb01653d2e85668f886f
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+d56d9e6744c35e2c1fb14aa9064e2aee
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Task4.$trModule2 Task4.$trModule1) -}
+0f6a6c61c0287cd5100a52f64c27e6d6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Task4"#) -}
+0e576baec60c763650235a0adcd259cc
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "w4-0.1.0.0-AeXeviOzpZi7LFvYz05J6W"#) -}
+efc9d24d06c34d7e419095e724c185ee
+  $wfromHex ::
+    Data.ByteString.Internal.ByteString
+    -> (# GHC.Types.Char, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <L,1*U(U,U,U,U)>, Inline: [0],
+     Unfolding: (\ (w :: Data.ByteString.Internal.ByteString) ->
+                 (# GHC.Show.shows6,
+                    case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                    case Data.ByteString.Base16.$wencode
+                           ww1
+                           ww2
+                           ww3
+                           ww4 of ww7 { Data.ByteString.Internal.PS ww8 ww9 ww10 ww11 ->
+                    GHC.Show.showLitString
+                      (Data.ByteString.Internal.$wunpackAppendCharsLazy
+                         ww8
+                         ww9
+                         ww10
+                         ww11
+                         (GHC.Types.[] @ GHC.Types.Char))
+                      Task4.fromHex1 } } #)) -}
+110cac8f5fa7ef241cf83c26c300629c
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+51381d115ff1a63b904e3fa477187dbf
+  $wunsafeDrop1 :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+56864ed6cba65652050e8e6e3c2097b8
+  $wunsafeDrop2 :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+66080f3d7ef49cf8d7d7008259d38716
+  $wunsafeDrop3 :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+a22552f7fa276a59a034d11f8bcd1dbd
+  charlist :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "23456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz?"#) -}
+25f5eb30a86587b8a86f210db1c53621
+  check :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (eta :: [GHC.Types.Char]) -> Task4.check_go eta) -}
+a61404116dd91b7f1e9be527ee2ce2bc
+  checkHash :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (inp :: GHC.Base.String) ->
+                 case Crypto.Hash.Types.$fShowDigest_$cshow
+                        @ Crypto.Hash.SHA256.SHA256
+                        (Crypto.Hash.hash
+                           @ Data.ByteString.Internal.ByteString
+                           @ Crypto.Hash.SHA256.SHA256
+                           Data.ByteArray.Types.$fByteArrayAccessByteString
+                           Crypto.Hash.SHA256.$fHashAlgorithmSHA256
+                           (let {
+                              cs :: [GHC.Types.Char]
+                              = GHC.Base.++ @ GHC.Types.Char inp Task4.checkHash1
+                            } in
+                            case GHC.List.$wlenAcc @ GHC.Types.Char cs 0# of ww2 { DEFAULT ->
+                            Data.ByteString.Internal.$wunsafePackLenChars ww2 cs })) of wild {
+                   [] -> case GHC.List.badHead ret_ty GHC.Types.Bool of {}
+                   : x ds1
+                   -> case x of wild1 { GHC.Types.C# x1 ->
+                      case x1 of wild2 {
+                        DEFAULT -> GHC.Types.False
+                        '0'#
+                        -> case ds1 of wild3 {
+                             [] -> case GHC.List.badHead ret_ty GHC.Types.Bool of {}
+                             : x2 ds2
+                             -> case x2 of wild4 { GHC.Types.C# x3 ->
+                                case x3 of wild5 {
+                                  DEFAULT -> GHC.Types.False '0'# -> GHC.Types.True } } } } } }) -}
+7c3e57228eea750fa4fb9b02abb8b1de
+  checkHash1 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Task4.checkHash2
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fa947cb1f71dfc3604ea8e263dca2c95
+  checkHash2 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '?'#) -}
+48be76c46e5a4de5510532d36272393b
+  check_go :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U> -}
+2693e12302e8bf3dd8a0a6902a1924c7
+  ex :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "S6c56bnXQiBjk9mqSYE7ykVQ7NzrRy"#) -}
+8417566f5deca6eff118490841e16094
+  ex1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "S6c56bnXQiBjk9mqSYE7ykVQ7NzrR"#) -}
+4e1ebd19c655f27fd7459be9ef3ec456
+  ex2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "S6c56bnXQiBjk9mqSYE7ykVQ7NzrR1"#) -}
+5f22afaa143508b2373ab0e940834007
+  ex3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "S6c56bnXQiBjk9mqSYE7ykVQ7NzrRm"#) -}
+267b774c10289a4ce380bb83fb6d5faf
+  ex4 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3A47FB70E4B779D1713F6C6835C9F46D868A4E8911241EC6ACE8134272B6FE79"#) -}
+1cf78683581dfe6bcfbf351072e4f588
+  ex5 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "380EF9D452F4F81A70E1C776A81CBA7E48B60E6C87CABF612604EC815FA8A758"#) -}
+844aac3163e48500f7a24f4c9f005c5f
+  fromBase1 :: Data.ByteString.Internal.ByteString
+  {- Strictness: x -}
+f59ffa3b68a90391bac62032ad33d2a4
+  fromBase58 ::
+    GHC.Base.String -> Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (x :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char x 0# of ww2 { DEFAULT ->
+                 case Data.ByteString.Internal.$wunsafePackLenChars
+                        ww2
+                        x of ww { Data.ByteString.Internal.PS ww1 ww4 ww3 ww5 ->
+                 case Data.ByteString.Base58.$wdecodeBase58
+                        Data.ByteString.Base58.Internal.bitcoinAlphabet1
+                          `cast`
+                        (Sym (Data.ByteString.Base58.Internal.N:Alphabet[0]))
+                        ww1
+                        ww4
+                        ww3
+                        ww5 of wild {
+                   GHC.Base.Nothing -> Task4.fromBase1 GHC.Base.Just v -> v } } }) -}
+c9fa8a596fd2cf4543ed7ec8345a140c
+  fromHex :: Data.ByteString.Internal.ByteString -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(U,U,U,U)>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.ByteString.Internal.ByteString) ->
+                 case Task4.$wfromHex w of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Char ww1 ww2 }) -}
+83511b15fd9da9464bdb1dfc1d94c3c0
+  fromHex1 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c7b70f534da0160457cb06931087f1bf
+  input :: GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (x :: GHC.Base.String) (inp :: GHC.Base.String) ->
+                 case x of wild {
+                   [] -> Task4.input2
+                   : ds ds1
+                   -> case ds of wild1 { GHC.Types.C# ds2 ->
+                      case ds2 of ds3 {
+                        DEFAULT -> Task4.input2
+                        '0'#
+                        -> case ds1 of wild2 {
+                             [] -> GHC.CString.unpackAppendCString# "80"# inp
+                             : ipv ipv1 -> Task4.input2 }
+                        '1'#
+                        -> case ds1 of wild2 {
+                             []
+                             -> GHC.CString.unpackAppendCString#
+                                  "80"#
+                                  (GHC.Base.++ @ GHC.Types.Char inp Task4.input1)
+                             : ipv ipv1 -> Task4.input2 } } } }) -}
+35585b54972e1eacd1c2990417fdb898
+  input1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "01"#) -}
+cf354d0973479430e0437e4fc0adb003
+  input2 :: GHC.Base.String
+  {- Strictness: x -}
+c2862a4c87f98f3f3ee105c3a1e8b417
+  output :: GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: GHC.Base.String) (inp :: GHC.Base.String) ->
+                 case x of wild {
+                   [] -> Task4.output1
+                   : ds ds1
+                   -> case ds of wild1 { GHC.Types.C# ds2 ->
+                      case ds2 of ds3 {
+                        DEFAULT -> Task4.output1
+                        '0'#
+                        -> case ds1 of wild2 {
+                             []
+                             -> Task4.$wunsafeDrop3
+                                  @ GHC.Types.Char
+                                  2#
+                                  (GHC.List.reverse1
+                                     @ GHC.Types.Char
+                                     (Task4.$wunsafeDrop2
+                                        @ GHC.Types.Char
+                                        8#
+                                        (GHC.List.reverse1
+                                           @ GHC.Types.Char
+                                           inp
+                                           (GHC.Types.[] @ GHC.Types.Char)))
+                                     (GHC.Types.[] @ GHC.Types.Char))
+                             : ipv ipv1 -> Task4.output1 }
+                        '1'#
+                        -> case ds1 of wild2 {
+                             []
+                             -> Task4.$wunsafeDrop1
+                                  @ GHC.Types.Char
+                                  2#
+                                  (GHC.List.reverse1
+                                     @ GHC.Types.Char
+                                     (Task4.$wunsafeDrop
+                                        @ GHC.Types.Char
+                                        10#
+                                        (GHC.List.reverse1
+                                           @ GHC.Types.Char
+                                           inp
+                                           (GHC.Types.[] @ GHC.Types.Char)))
+                                     (GHC.Types.[] @ GHC.Types.Char))
+                             : ipv ipv1 -> Task4.output1 } } } }) -}
+c429ac34b9712ffda5b197a215ec735c
+  output1 :: GHC.Base.String
+  {- Strictness: x -}
+1cb89bda4e0b5780c31a78cd5b063752
+  sha256 ::
+    Data.ByteString.Internal.ByteString
+    -> Crypto.Hash.Types.Digest Crypto.Hash.SHA256.SHA256
+  {- Arity: 1,
+     Unfolding: (Crypto.Hash.hash
+                   @ Data.ByteString.Internal.ByteString
+                   @ Crypto.Hash.SHA256.SHA256
+                   Data.ByteArray.Types.$fByteArrayAccessByteString
+                   Crypto.Hash.SHA256.$fHashAlgorithmSHA256) -}
+a0479993a7b358b607b3502f49eac917
+  test :: GHC.Types.Bool
+  {- Unfolding: (GHC.Base.eqString Task4.test1 Task4.ex4) -}
+6bf35105ff23ca9ccd72f689fdb682c0
+  test1 :: GHC.Base.String
+  {- Unfolding: (Task4.walletDec Task4.test4 Task4.test3) -}
+4a054b89d463d67122e25915c8309b5e
+  test2 :: GHC.Types.Bool
+  {- Unfolding: (GHC.Base.eqString Task4.test6 Task4.test5) -}
+cc7cb011d51bfcd41e578a21592ccc4d
+  test3 :: GHC.Base.String
+  {- Unfolding: (Task4.walletEnc Task4.test4 Task4.ex4) -}
+395a284de78573dcc00fc180942647b4
+  test4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "0"#) -}
+a04b2d2d6715ebf1f89edfd38fe7412b
+  test5 :: GHC.Base.String
+  {- Unfolding: (Task4.validator Task4.ex) -}
+09e52f2e30501559f8dc101a62e26ebf
+  test6 :: GHC.Base.String
+  {- Unfolding: (Task4.walletDec Task4.test4 Task4.test7) -}
+b7fa54b6783d5868885a6ecc40ad6e8e
+  test7 :: GHC.Base.String
+  {- Unfolding: (Task4.walletEnc Task4.test4 Task4.test5) -}
+3c83f93b712fb559ac9e30e3dfbb4638
+  toBase58 ::
+    Data.ByteString.Internal.ByteString
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 1,
+     Unfolding: (Data.ByteString.Base58.encodeBase58
+                   Data.ByteString.Base58.Internal.bitcoinAlphabet1
+                     `cast`
+                   (Sym (Data.ByteString.Base58.Internal.N:Alphabet[0]))) -}
+e0a455e3e11766986a69be41e9d65542
+  toHex :: GHC.Base.String -> Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (x :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char x 0# of ww2 { DEFAULT ->
+                 case Data.ByteString.Internal.$wunsafePackLenChars
+                        ww2
+                        x of ww { Data.ByteString.Internal.PS ww1 ww4 ww3 ww5 ->
+                 case Data.ByteString.Base16.$wdecode
+                        ww1
+                        ww4
+                        ww3
+                        ww5 of wild { (,) x1 ds1 ->
+                 x1 } } }) -}
+673a2a0d1c814c5325e87c743fd4faa2
+  validator :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (inp :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char inp 0# of ww2 {
+                   DEFAULT -> Task4.validator3
+                   30#
+                   -> case Task4.validator_go inp of wild {
+                        GHC.Types.False -> Task4.validator2
+                        GHC.Types.True
+                        -> case Task4.checkHash inp of wild1 {
+                             GHC.Types.False -> Task4.validator1
+                             GHC.Types.True
+                             -> GHC.Base.map
+                                  @ GHC.Types.Char
+                                  @ GHC.Types.Char
+                                  GHC.Unicode.toUpper
+                                  (Crypto.Hash.Types.$fShowDigest_$cshow
+                                     @ Crypto.Hash.SHA256.SHA256
+                                     (Crypto.Hash.hash
+                                        @ Data.ByteString.Internal.ByteString
+                                        @ Crypto.Hash.SHA256.SHA256
+                                        Data.ByteArray.Types.$fByteArrayAccessByteString
+                                        Crypto.Hash.SHA256.$fHashAlgorithmSHA256
+                                        (Data.ByteString.Internal.$wunsafePackLenChars
+                                           30#
+                                           inp))) } } }) -}
+9cb976889810ab29efbfaf21cb5d94cb
+  validator1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Not valid-hash not correct"#) -}
+e372ceed4b10ff4feabf6f61df8bcbab
+  validator2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Not valid, input string containg non-valid chars"#) -}
+e63b3abe8fdbbd8458df941c4f932497
+  validator3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Not valid, wrong length of input"#) -}
+7784f53e9788c96080a4923f26393ef7
+  validator_go :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U> -}
+34f8348b91607a5cf1d56e30257f975a
+  walletDec :: GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (i :: GHC.Base.String) (inp :: GHC.Base.String) ->
+                 case Task4.fromBase58
+                        inp of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 case Data.ByteString.Base16.$wencode
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww7 { Data.ByteString.Internal.PS ww8 ww9 ww10 ww11 ->
+                 case GHC.Show.showLitString
+                        (Data.ByteString.Internal.$wunpackAppendCharsLazy
+                           ww8
+                           ww9
+                           ww10
+                           ww11
+                           (GHC.Types.[] @ GHC.Types.Char))
+                        Task4.fromHex1 of wild {
+                   [] -> case GHC.List.init2 ret_ty [GHC.Types.Char] of {}
+                   : x xs
+                   -> GHC.Base.map
+                        @ GHC.Types.Char
+                        @ GHC.Types.Char
+                        GHC.Unicode.toUpper
+                        (Task4.output i (GHC.List.init1 @ GHC.Types.Char x xs)) } } }) -}
+654812f73c56d0678bc89eca8625a4fb
+  walletEnc :: GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,U><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
